@@ -1,0 +1,88 @@
+{
+ "incidente": "INC-0197",
+ "resumen": {
+  "alertas": 2,
+  "evidencias": 4,
+  "duracion_min": 27.5,
+  "detectores_distintos": 1,
+  "categorias": {
+   "SuspiciousActivity": 2
+  },
+  "entidades_distintas": {
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1,
+   "aplicaciones": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-5",
+   "titulo": "T-49",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 27.5,
+   "detector": "D-5",
+   "titulo": "T-49",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-5": {
+    "alertas_calificadas": 6471,
+    "TP_%": 47.1,
+    "BP_%": 30.6,
+    "FP_%": 22.3
+   },
+   "T-49": {
+    "alertas_calificadas": 648,
+    "TP_%": 29.3,
+    "BP_%": 34.7,
+    "FP_%": 36.0
+   },
+   "categoria SuspiciousActivity": {
+    "alertas_calificadas": 11308,
+    "TP_%": 34.2,
+    "BP_%": 47.7,
+    "FP_%": 18.1
+   }
+  }
+ }
+}

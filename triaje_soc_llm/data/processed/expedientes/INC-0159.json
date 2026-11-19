@@ -1,0 +1,90 @@
+{
+ "incidente": "INC-0159",
+ "resumen": {
+  "alertas": 2,
+  "evidencias": 5,
+  "duracion_min": 335.4,
+  "detectores_distintos": 1,
+  "categorias": {
+   "InitialAccess": 2
+  },
+  "entidades_distintas": {
+   "cuentas": 1,
+   "cuentas_correo": 2,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1,
+   "mensajes_correo": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-130",
+   "titulo": "T-110",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 335.4,
+   "detector": "D-130",
+   "titulo": "T-110",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-130": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-110": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   }
+  }
+ }
+}

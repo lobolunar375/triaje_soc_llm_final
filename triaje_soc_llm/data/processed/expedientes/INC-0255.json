@@ -1,0 +1,183 @@
+{
+ "incidente": "INC-0255",
+ "resumen": {
+  "alertas": 5,
+  "evidencias": 15,
+  "duracion_min": 552.9,
+  "detectores_distintos": 1,
+  "categorias": {
+   "SuspiciousActivity": 5
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 1,
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1,
+   "aplicaciones": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-5",
+   "titulo": "T-21",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 253.4,
+   "detector": "D-5",
+   "titulo": "T-21",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A3",
+   "minuto": 406.4,
+   "detector": "D-5",
+   "titulo": "T-21",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A3-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A3-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A3-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A4",
+   "minuto": 464.7,
+   "detector": "D-5",
+   "titulo": "T-21",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A4-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A4-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A4-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A5",
+   "minuto": 552.9,
+   "detector": "D-5",
+   "titulo": "T-21",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A5-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A5-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A5-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-5": {
+    "alertas_calificadas": 6471,
+    "TP_%": 47.1,
+    "BP_%": 30.6,
+    "FP_%": 22.3
+   },
+   "T-21": {
+    "alertas_calificadas": 12,
+    "nota": "historial insuficiente"
+   },
+   "categoria SuspiciousActivity": {
+    "alertas_calificadas": 11308,
+    "TP_%": 34.2,
+    "BP_%": 47.7,
+    "FP_%": 18.1
+   }
+  }
+ }
+}

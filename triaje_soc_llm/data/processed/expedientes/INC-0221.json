@@ -1,0 +1,660 @@
+{
+ "incidente": "INC-0221",
+ "resumen": {
+  "alertas": 22,
+  "evidencias": 66,
+  "duracion_min": 991.2,
+  "detectores_distintos": 1,
+  "categorias": {
+   "InitialAccess": 22
+  },
+  "entidades_distintas": {
+   "cuentas": 9,
+   "cuentas_correo": 9,
+   "cuentas_entra_id": 9,
+   "nombres_cuenta": 9,
+   "mensajes_correo": 11
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 91.7,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A3",
+   "minuto": 99.1,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A3-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A3-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A3-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A4",
+   "minuto": 204.4,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A4-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A4-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A4-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A5",
+   "minuto": 219.6,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A5-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A5-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A5-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A6",
+   "minuto": 253.1,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A6-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A6-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A6-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A7",
+   "minuto": 309.3,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A7-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A7-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A7-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A8",
+   "minuto": 321.0,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A8-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A8-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A8-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A9",
+   "minuto": 345.9,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A9-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A9-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A9-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A10",
+   "minuto": 347.4,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A10-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A10-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A10-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A11",
+   "minuto": 359.9,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A11-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A11-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A11-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A12",
+   "minuto": 365.7,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A12-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A12-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A12-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A13",
+   "minuto": 432.7,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A13-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A13-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A13-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A14",
+   "minuto": 445.2,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A14-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A14-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A14-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A15",
+   "minuto": 477.7,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A15-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A15-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A15-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A16",
+   "minuto": 517.1,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A16-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A16-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A16-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A17",
+   "minuto": 527.5,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A17-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A17-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A17-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A18",
+   "minuto": 597.6,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A18-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A18-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A18-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A19",
+   "minuto": 717.4,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A19-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A19-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A19-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A20",
+   "minuto": 775.0,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A20-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A20-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A20-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A21",
+   "minuto": 882.7,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A21-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A21-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A21-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A22",
+   "minuto": 991.2,
+   "detector": "D-25",
+   "titulo": "T-17",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A22-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A22-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A22-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-25": {
+    "alertas_calificadas": 1390,
+    "TP_%": 14.3,
+    "BP_%": 66.6,
+    "FP_%": 19.1
+   },
+   "T-17": {
+    "alertas_calificadas": 1390,
+    "TP_%": 14.3,
+    "BP_%": 66.6,
+    "FP_%": 19.1
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   }
+  }
+ }
+}

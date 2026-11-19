@@ -1,0 +1,13 @@
+condicion,clase_real,TP,BP,FP,NP
+Siempre BP,TP,0,75,0,0.0
+Siempre BP,BP,0,151,0,0.0
+Siempre BP,FP,0,74,0,0.0
+Regla del historial,TP,30,28,17,0.0
+Regla del historial,BP,28,84,39,0.0
+Regla del historial,FP,10,28,36,0.0
+C1 (un solo LLM),TP,10,28,37,0.0
+C1 (un solo LLM),BP,37,51,63,0.0
+C1 (un solo LLM),FP,13,18,43,0.0
+C2 (multiagente),TP,13,42,15,5.0
+C2 (multiagente),BP,25,80,40,6.0
+C2 (multiagente),FP,9,27,34,4.0

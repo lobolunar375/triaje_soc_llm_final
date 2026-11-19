@@ -1,0 +1,61 @@
+====================================================================================================
+02_limpiar_datos  |  inicio 2026-11-02 21:01:07
+====================================================================================================
+
+[PASO 1] Verificar el esquema
+  Por qué: El resto del pipeline asume las 45 columnas publicadas por Microsoft.
+  Columnas: 45. Faltan: ninguna. Sobran: ninguna.
+  Quedan 9,516,837 evidencias y 730,778 incidentes.
+
+[PASO 2] Eliminar filas duplicadas exactas
+  Por qué: Una evidencia repetida infla los conteos del incidente sin aportar información.
+  Duplicados eliminados: 22,559 (0.24 %).
+  Quedan 9,494,278 evidencias y 730,778 incidentes.
+
+[PASO 3] Normalizar vacíos y valores centinela
+  Por qué: En las columnas de entidades seudonimizadas el valor dominante significa "sin entidad"; contarlo como entidad haría que todos los incidentes parezcan tener el mismo dispositivo o cuenta.
+  DeviceId: el código 98799 aparece en 96.19 % de las filas; se trata como "sin entidad".
+  Sha256: el código 138268 aparece en 92.29 % de las filas; se trata como "sin entidad".
+  IpAddress: el código 360606 aparece en 77.13 % de las filas; se trata como "sin entidad".
+  Url: el código 160396 aparece en 92.81 % de las filas; se trata como "sin entidad".
+  AccountSid: el código 441377 aparece en 76.32 % de las filas; se trata como "sin entidad".
+  AccountUpn: el código 673934 aparece en 63.58 % de las filas; se trata como "sin entidad".
+  AccountObjectId: el código 425863 aparece en 76.57 % de las filas; se trata como "sin entidad".
+  AccountName: el código 453297 aparece en 75.14 % de las filas; se trata como "sin entidad".
+  DeviceName: el código 153085 aparece en 92.67 % de las filas; se trata como "sin entidad".
+  NetworkMessageId: el código 529644 aparece en 87.79 % de las filas; se trata como "sin entidad".
+  RegistryKey: el código 1631 aparece en 99.82 % de las filas; se trata como "sin entidad".
+  ApplicationId: el código 2251 aparece en 97.76 % de las filas; se trata como "sin entidad".
+  FileName: el código 289573 aparece en 89.18 % de las filas; se trata como "sin entidad".
+
+[PASO 4] Convertir Timestamp a fecha y hora
+  Por qué: Se usa para ordenar las alertas y medir la duración del incidente.
+  Marcas inválidas: 0. Rango temporal: 2023-11-20 16:32:22 a 2024-06-17 14:45:38.
+  Quedan 9,494,278 evidencias y 730,778 incidentes.
+
+[PASO 5] Excluir incidentes sin calificación o con calificación múltiple
+  Por qué: Sin verdad terreno no se puede medir la precisión del triaje.
+  Sin calificación: 23,670. Con más de una calificación: 0. Con calificación y filas nulas: 0.
+  Quedan 9,442,956 evidencias y 707,108 incidentes.
+
+[PASO 6] Excluir incidentes con más de 50 alertas distintas
+  Por qué: En ellos el expediente mostraría en detalle menos de la mitad de las alertas (límite de 25) y no representaría fielmente el incidente; el criterio se aplica antes del muestreo para que la muestra represente a la población elegible.
+  Incidentes excluidos por tamaño: 1,200. Clases de los excluidos: {'TruePositive': 536, 'BenignPositive': 419, 'FalsePositive': 245}.
+  Quedan 6,707,032 evidencias y 705,908 incidentes.
+
+[PASO 7] Aplicar la selección de características y verificar sus supuestos con los datos
+  Por qué: Cada columna tiene un rol (clave, entrada, historial, conteo, etiqueta o eliminada); la tabla final deja constancia de la evidencia empírica que respalda cada decisión.
+       clave: OrgId, IncidentId, AlertId
+      conteo: DeviceId, Sha256, IpAddress, Url, AccountSid, AccountUpn, AccountObjectId, AccountName, DeviceName, NetworkMessageId, RegistryKey, ApplicationId, FileName
+   eliminada: Id, ActionGrouped, ActionGranular, EmailClusterId, RegistryValueName, RegistryValueData, ApplicationName, OAuthApplicationId, ThreatFamily, FolderPath, ResourceIdName, ResourceType, Roles, OSFamily, OSVersion, AntispamDirection, CountryCode, State, City
+     entrada: Timestamp, Category, MitreTechniques, EntityType, EvidenceRole, SuspicionLevel, LastVerdict
+    etiqueta: IncidentGrade
+   historial: DetectorId, AlertTitle
+  Verificación de supuestos: todos se cumplen.
+
+[PASO 8] Construir la tabla de incidentes
+  Por qué: El incidente es la unidad de análisis del estudio.
+  Distribución de clases de la población elegible: BenignPositive 346,179 (49.04 %), FalsePositive 214,679 (30.41 %), TruePositive 145,050 (20.55 %)
+  Organizaciones con al menos un incidente elegible: 5,339.
+
+Fin de 02_limpiar_datos: 123.2 s

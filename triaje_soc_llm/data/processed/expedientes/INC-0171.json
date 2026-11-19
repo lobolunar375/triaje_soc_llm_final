@@ -1,0 +1,72 @@
+{
+ "incidente": "INC-0171",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 3,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "InitialAccess": 1
+  },
+  "entidades_distintas": {
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1,
+   "mensajes_correo": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-33",
+   "titulo": "T-22",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-33": {
+    "alertas_calificadas": 1446,
+    "TP_%": 4.5,
+    "BP_%": 74.0,
+    "FP_%": 21.5
+   },
+   "T-22": {
+    "alertas_calificadas": 1446,
+    "TP_%": 4.5,
+    "BP_%": 74.0,
+    "FP_%": 21.5
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   }
+  }
+ }
+}

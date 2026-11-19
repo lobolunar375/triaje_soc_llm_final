@@ -1,0 +1,74 @@
+{
+ "incidente": "INC-0116",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 3,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Exfiltration": 1
+  },
+  "entidades_distintas": {
+   "nombres_cuenta": 1,
+   "urls": 1,
+   "archivos": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-897",
+   "titulo": "T-1506",
+   "categoria": "Exfiltration",
+   "tecnicas": [
+    "T1537"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1537",
+    "nombre": "Transfer Data to Cloud Account",
+    "tacticas": "exfiltration"
+   }
+  ],
+  "historial": {
+   "D-897": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-1506": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria Exfiltration": {
+    "alertas_calificadas": 11961,
+    "TP_%": 2.5,
+    "BP_%": 80.7,
+    "FP_%": 16.8
+   }
+  }
+ }
+}

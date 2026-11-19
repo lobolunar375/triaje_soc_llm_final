@@ -1,0 +1,68 @@
+{
+ "incidente": "INC-0210",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 2,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "LateralMovement": 1
+  },
+  "entidades_distintas": {
+   "dispositivos": 1,
+   "nombres_cuenta": 1,
+   "nombres_dispositivo": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-267",
+   "titulo": "T-127",
+   "categoria": "LateralMovement",
+   "tecnicas": [
+    "T1210"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1210",
+    "nombre": "Exploitation of Remote Services",
+    "tacticas": "lateral-movement"
+   }
+  ],
+  "historial": {
+   "D-267": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-127": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria LateralMovement": {
+    "alertas_calificadas": 447,
+    "TP_%": 14.8,
+    "BP_%": 69.8,
+    "FP_%": 15.4
+   }
+  }
+ }
+}

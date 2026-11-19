@@ -1,0 +1,76 @@
+{
+ "incidente": "INC-0285",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 7,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Exfiltration": 1
+  },
+  "entidades_distintas": {
+   "cuentas": 2,
+   "cuentas_correo": 4,
+   "cuentas_entra_id": 2,
+   "nombres_cuenta": 2,
+   "archivos": 2,
+   "mensajes_correo": 1,
+   "aplicaciones": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-102",
+   "titulo": "T-54352",
+   "categoria": "Exfiltration",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "File",
+     "rol": "Impacted",
+     "n": 2
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "MailMessage",
+     "rol": "Impacted",
+     "n": 2
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 2
+    },
+    {
+     "id": "A1-E4",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-102": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-54352": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria Exfiltration": {
+    "alertas_calificadas": 11961,
+    "TP_%": 2.5,
+    "BP_%": 80.7,
+    "FP_%": 16.8
+   }
+  }
+ }
+}

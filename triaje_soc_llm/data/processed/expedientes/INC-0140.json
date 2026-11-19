@@ -1,0 +1,59 @@
+{
+ "incidente": "INC-0140",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 2,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "CredentialAccess": 1
+  },
+  "entidades_distintas": {
+   "nombres_cuenta": 1,
+   "nombres_dispositivo": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-3458",
+   "titulo": "T-14963",
+   "categoria": "CredentialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-3458": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-14963": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria CredentialAccess": {
+    "alertas_calificadas": 2385,
+    "TP_%": 26.0,
+    "BP_%": 48.9,
+    "FP_%": 25.1
+   }
+  }
+ }
+}

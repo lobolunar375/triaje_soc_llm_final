@@ -1,0 +1,179 @@
+{
+ "incidente": "INC-0056",
+ "resumen": {
+  "alertas": 5,
+  "evidencias": 46,
+  "duracion_min": 1472.1,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Exfiltration": 5
+  },
+  "entidades_distintas": {
+   "cuentas": 5,
+   "cuentas_correo": 24,
+   "cuentas_entra_id": 5,
+   "nombres_cuenta": 5,
+   "archivos": 2,
+   "mensajes_correo": 5
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-122",
+   "titulo": "T-19340",
+   "categoria": "Exfiltration",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "MailMessage",
+     "rol": "Impacted",
+     "n": 11
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 61.8,
+   "detector": "D-122",
+   "titulo": "T-51767",
+   "categoria": "Exfiltration",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "MailMessage",
+     "rol": "Impacted",
+     "n": 2
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "File",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A3",
+   "minuto": 284.2,
+   "detector": "D-122",
+   "titulo": "T-18746",
+   "categoria": "Exfiltration",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A3-E1",
+     "tipo": "MailMessage",
+     "rol": "Impacted",
+     "n": 11
+    },
+    {
+     "id": "A3-E2",
+     "tipo": "File",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A3-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A4",
+   "minuto": 1174.4,
+   "detector": "D-122",
+   "titulo": "T-12734",
+   "categoria": "Exfiltration",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A4-E1",
+     "tipo": "MailMessage",
+     "rol": "Impacted",
+     "n": 7
+    },
+    {
+     "id": "A4-E2",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A5",
+   "minuto": 1472.1,
+   "detector": "D-122",
+   "titulo": "T-17581",
+   "categoria": "Exfiltration",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A5-E1",
+     "tipo": "MailMessage",
+     "rol": "Impacted",
+     "n": 8
+    },
+    {
+     "id": "A5-E2",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-122": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-19340": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria Exfiltration": {
+    "alertas_calificadas": 11961,
+    "TP_%": 2.5,
+    "BP_%": 80.7,
+    "FP_%": 16.8
+   },
+   "T-51767": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-18746": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-12734": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-17581": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   }
+  }
+ }
+}

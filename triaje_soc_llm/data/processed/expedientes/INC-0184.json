@@ -1,0 +1,58 @@
+{
+ "incidente": "INC-0184",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 2,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "InitialAccess": 1
+  },
+  "entidades_distintas": {
+   "urls": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-82",
+   "titulo": "T-60",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-82": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-60": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   }
+  }
+ }
+}

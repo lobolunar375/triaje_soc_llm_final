@@ -1,0 +1,71 @@
+{
+ "incidente": "INC-0014",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 3,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "SuspiciousActivity": 1
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 1,
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1,
+   "aplicaciones": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-81",
+   "titulo": "T-246",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-81": {
+    "alertas_calificadas": 699,
+    "TP_%": 16.6,
+    "BP_%": 80.5,
+    "FP_%": 2.9
+   },
+   "T-246": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria SuspiciousActivity": {
+    "alertas_calificadas": 11308,
+    "TP_%": 34.2,
+    "BP_%": 47.7,
+    "FP_%": 18.1
+   }
+  }
+ }
+}

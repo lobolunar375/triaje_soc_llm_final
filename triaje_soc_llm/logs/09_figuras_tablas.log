@@ -1,0 +1,23 @@
+====================================================================================================
+09_figuras_tablas  |  inicio 2026-11-15 23:42:29
+====================================================================================================
+
+[PASO 1] Figura de distribución de clases
+  Por qué: Compara la muestra con la población de la que proviene.
+
+[PASO 2] Figura de alertas por incidente
+  Por qué: Justifica el resumen del expediente y el umbral de exclusión.
+
+[PASO 3] Matrices de confusión de la regla del historial, C1 y C2
+  Por qué: Muestran qué errores predominan en cada condición.
+
+[PASO 4] Exactitud por subgrupo según el historial
+  Por qué: Localiza en qué incidentes se produce la diferencia entre C1 y C2.
+
+[PASO 5] Exactitud por intervalo de confianza declarada
+  Por qué: Una confianza útil crece con la exactitud.
+
+[PASO 6] Tiempo de triaje por incidente y por agente
+  Por qué: Muestra el costo temporal de dividir el triaje en etapas.
+
+Fin de 09_figuras_tablas: 0.9 s

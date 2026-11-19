@@ -1,0 +1,84 @@
+{
+  "archivo": "GUIDE_Train.csv",
+  "filas_evidencias": 9516837,
+  "columnas": 45,
+  "alertas": 1265644,
+  "incidentes": 730778,
+  "organizaciones": 5769,
+  "distribucion_evidencias": {
+    "BenignPositive": 4110817,
+    "TruePositive": 3322713,
+    "FalsePositive": 2031967,
+    "(nulo)": 51340
+  },
+  "distribucion_incidentes": {
+    "BenignPositive": 346598,
+    "(nulo)": 23670,
+    "TruePositive": 145586,
+    "FalsePositive": 214924
+  },
+  "incidentes_etiqueta_inconsistente": 0,
+  "alertas_por_incidente": {
+    "p50_p75_p90_p95_p99": [
+      1.0,
+      1.0,
+      2.0,
+      3.0,
+      9.0
+    ],
+    "max": 5371,
+    "media": 2.28
+  },
+  "evidencias_por_incidente": {
+    "p50_p75_p90_p95_p99": [
+      4.0,
+      6.0,
+      14.0,
+      24.0,
+      108.0
+    ],
+    "max": 29997,
+    "media": 13.023
+  },
+  "incidentes_por_org": {
+    "p50_p75_p90_p95_p99": [
+      7.0,
+      40.0,
+      175.19999999999982,
+      441.0,
+      2314.479999999996
+    ],
+    "max": 28522,
+    "media": 126.673
+  },
+  "pct_incidentes_hasta_k_alertas": {
+    "1": 87.62,
+    "5": 98.1,
+    "10": 99.14,
+    "25": 99.69,
+    "50": 99.83,
+    "100": 99.89
+  },
+  "top5_org": [
+    [
+      "11",
+      28522
+    ],
+    [
+      "3",
+      18381
+    ],
+    [
+      "18",
+      18023
+    ],
+    [
+      "16",
+      16154
+    ],
+    [
+      "24",
+      13614
+    ]
+  ]
+}

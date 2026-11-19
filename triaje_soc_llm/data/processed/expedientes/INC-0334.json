@@ -1,0 +1,66 @@
+{
+ "incidente": "INC-0334",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 2,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "SuspiciousActivity": 1
+  },
+  "entidades_distintas": {
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1,
+   "aplicaciones": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-5",
+   "titulo": "T-278",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-5": {
+    "alertas_calificadas": 6471,
+    "TP_%": 47.1,
+    "BP_%": 30.6,
+    "FP_%": 22.3
+   },
+   "T-278": {
+    "alertas_calificadas": 215,
+    "TP_%": 17.2,
+    "BP_%": 17.7,
+    "FP_%": 65.1
+   },
+   "categoria SuspiciousActivity": {
+    "alertas_calificadas": 11308,
+    "TP_%": 34.2,
+    "BP_%": 47.7,
+    "FP_%": 18.1
+   }
+  }
+ }
+}

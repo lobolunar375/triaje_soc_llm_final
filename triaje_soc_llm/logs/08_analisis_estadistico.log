@@ -1,0 +1,39 @@
+====================================================================================================
+08_analisis_estadistico  |  inicio 2026-11-15 23:41:45
+====================================================================================================
+
+[PASO 1] H.E.1: McNemar sobre el acierto, C2 frente a C1
+  Por qué: Respuesta binaria y pareada por incidente.
+  {'b': 45, 'c': 22, 'estadistico': 7.895522388059701, 'p': 0.004955732317277909, 'metodo': 'asintótico sin corrección', 'razon_bc': 2.045, 'exactitud_C1': 0.3467, 'exactitud_C2': 0.4233, 'IC95_exactitud_C1': [0.2933, 0.4], 'IC95_exactitud_C2': [0.37, 0.48], 'IC95_dif_exactitud': [0.0267, 0.13], 'f1_C1': 0.3186, 'f1_C2': 0.3879, 'IC95_f1_C1': [0.2688, 0.3669], 'IC95_f1_C2': [0.3318, 0.4419], 'IC95_dif_f1': [0.0211, 0.1201]}
+
+[PASO 2] H.E.2: Wilcoxon sobre el tiempo por incidente, C2 frente a C1
+  Por qué: Los tiempos son asimétricos; se comparan las diferencias pareadas. Un incidente sin tiempo en C2 (tres corridas no procesadas) no entra.
+  {'n_pares': 297, 'W_mas': 44253.0, 'W_menos': 0.0, 'W': 0.0, 'p': 1.883216264560049e-50, 'r_rb': 1.0, 'mediana_dif_s': 6.029, 'pares_con_C2_mas_lento': 297, 'mediana_x_s': 8.9372, 'mediana_y_s': 2.7892, 'razon_medianas': 3.2, 'IC95_mediana_dif_s': [5.904, 6.17], 'media_C1_s': 2.8458, 'media_C2_s': 9.0573, 'de_C1_s': 0.4351, 'de_C2_s': 1.1949}
+
+[PASO 3] H.E.3: McNemar sobre la decisión trazable (criterios 1 a 3), C2 frente a C1
+  Por qué: Proporción pareada.
+  {'b': 0, 'c': 17, 'estadistico': None, 'p': 7.62939453124999e-06, 'metodo': 'mid-p', 'razon_bc': 0.0, 'TD_C1': 1.0, 'TD_C2': 0.9433, 'IC95_TD_C1': [1.0, 1.0], 'IC95_TD_C2': [0.9167, 0.9667], 'IC95_dif_TD': [-0.0833, -0.0333]}
+
+[PASO 4] Corrección de Holm y decisión
+  Por qué: Controla el error de tipo I al contrastar tres hipótesis; además se exige la dirección planteada.
+  {'HE1': {'significativa': True, 'direccion_favorable_a_C2': True, 'se_acepta': True}, 'HE2': {'significativa': True, 'direccion_favorable_a_C2': False, 'se_acepta': False}, 'HE3': {'significativa': True, 'direccion_favorable_a_C2': False, 'se_acepta': False}, 'HG': 'se acepta parcialmente'}
+
+[PASO 5] Análisis de sensibilidad
+  Por qué: Las conclusiones no deben depender de una corrida, de las corridas no procesadas, de los escalados ni de la agrupación por organización.
+  {'analisis': 'H.E.1, corrida 1', 'n': 300, 'exactitud_C1': 0.36, 'exactitud_C2': 0.4033, 'b': 49, 'c': 36, 'p': 0.15852551722895114}
+  {'analisis': 'H.E.3, corrida 1', 'n': 300, 'TD_C1': 1.0, 'TD_C2': 0.93, 'b': 0, 'c': 21, 'p': 4.7683715820312436e-07}
+  {'analisis': 'H.E.1, corrida 2', 'n': 300, 'exactitud_C1': 0.3433, 'exactitud_C2': 0.3967, 'b': 42, 'c': 26, 'p': 0.052345063273163295}
+  {'analisis': 'H.E.3, corrida 2', 'n': 300, 'TD_C1': 0.9967, 'TD_C2': 0.9233, 'b': 1, 'c': 23, 'p': 1.5497207641601594e-06}
+  {'analisis': 'H.E.1, corrida 3', 'n': 300, 'exactitud_C1': 0.36, 'exactitud_C2': 0.4367, 'b': 48, 'c': 25, 'p': 0.007103636399742147}
+  {'analisis': 'H.E.3, corrida 3', 'n': 300, 'TD_C1': 0.9967, 'TD_C2': 0.9133, 'b': 1, 'c': 26, 'p': 1.4998757938933015e-06}
+  {'analisis': 'H.E.1, incidentes sin corridas no procesadas en C2', 'n': 254, 'exactitud_C1': 0.3189, 'exactitud_C2': 0.4291, 'b': 40, 'c': 12, 'p': 0.00010321744149513965}
+  {'analisis': 'H.E.1, sin los incidentes no procesados por mayoría en C2', 'n': 285, 'exactitud_C1': 0.3368, 'exactitud_C2': 0.4456, 'b': 45, 'c': 14, 'p': 5.4403522182500853e-05}
+  {'analisis': 'H.E.1, incidentes con decisión no escalada en ambas condiciones', 'n': 75, 'exactitud_C1': 0.6267, 'exactitud_C2': 0.6133, 'b': 1, 'c': 2, 'p': 0.6249999999999999}
+  {'analisis': 'H.E.1, incidentes con historial de detector', 'n': 216, 'exactitud_C1': 0.375, 'exactitud_C2': 0.3796, 'b': 18, 'c': 17, 'p': 0.8657723749926214}
+  {'analisis': 'H.E.1, incidentes sin historial de detector', 'n': 84, 'exactitud_C1': 0.2738, 'exactitud_C2': 0.5357, 'b': 27, 'c': 5, 'p': 0.00010062192211963679}
+  {'analisis': 'IC95 dif. exactitud, bootstrap por organización', 'ic': [0.0184, 0.1317]}
+  {'analisis': 'IC95 dif. F1 macro, bootstrap por organización', 'ic': [0.0157, 0.1192]}
+  {'analisis': 'IC95 dif. TD, bootstrap por organización', 'ic': [-0.0868, -0.0327]}
+  {'analisis': 'H.E.3 con C2 antes de la corrección de trazabilidad', 'b': 0, 'c': 17, 'p': 7.62939453124999e-06}
+
+Fin de 08_analisis_estadistico: 31.9 s

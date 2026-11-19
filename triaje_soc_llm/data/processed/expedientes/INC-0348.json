@@ -1,0 +1,69 @@
+{
+ "incidente": "INC-0348",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 3,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Malware": 1
+  },
+  "entidades_distintas": {
+   "dispositivos": 1,
+   "nombres_dispositivo": 1,
+   "archivos_hash": 1,
+   "archivos": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-31",
+   "titulo": "T-436",
+   "categoria": "Malware",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-31": {
+    "alertas_calificadas": 2177,
+    "TP_%": 16.9,
+    "BP_%": 18.1,
+    "FP_%": 65.1
+   },
+   "T-436": {
+    "alertas_calificadas": 52,
+    "TP_%": 53.8,
+    "BP_%": 36.5,
+    "FP_%": 9.6
+   },
+   "categoria Malware": {
+    "alertas_calificadas": 3995,
+    "TP_%": 37.4,
+    "BP_%": 22.1,
+    "FP_%": 40.5
+   }
+  }
+ }
+}

@@ -1,0 +1,46 @@
+{
+  "tokens_estimados": {
+    "count": 375.0,
+    "mean": 311.0,
+    "std": 250.8,
+    "min": 166.8,
+    "25%": 228.0,
+    "50%": 247.5,
+    "75%": 314.8,
+    "max": 3124.2
+  },
+  "exceden_presupuesto": 0,
+  "alertas_historicas_kb": 79806,
+  "incidentes_historicos_kb": 59409,
+  "codigos_kb": {
+    "categoria": 19,
+    "detector": 1373,
+    "titulo": 6797
+  },
+  "codigos_kb_con_soporte": {
+    "categoria": 17,
+    "detector": 246,
+    "titulo": 366
+  },
+  "tecnicas_no_encontradas": [],
+  "referencia_estadistica": {
+    "desarrollo": {
+      "n": 75,
+      "exactitud_%": 46.7,
+      "f1_macro_%": 44.2,
+      "con_historial_%": 74.67,
+      "exactitud_con_historial_%": 41.1,
+      "exactitud_todo_BP_%": 42.7,
+      "f1_macro_todo_BP_%": 19.9
+    },
+    "evaluacion": {
+      "n": 300,
+      "exactitud_%": 50.0,
+      "f1_macro_%": 47.7,
+      "con_historial_%": 72.0,
+      "exactitud_con_historial_%": 45.8,
+      "exactitud_todo_BP_%": 50.3,
+      "f1_macro_todo_BP_%": 22.3
+    }
+  }
+}

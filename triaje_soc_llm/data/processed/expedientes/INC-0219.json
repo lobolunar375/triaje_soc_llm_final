@@ -1,0 +1,174 @@
+{
+ "incidente": "INC-0219",
+ "resumen": {
+  "alertas": 3,
+  "evidencias": 15,
+  "duracion_min": 431.4,
+  "detectores_distintos": 1,
+  "categorias": {
+   "CommandAndControl": 3
+  },
+  "entidades_distintas": {
+   "dispositivos": 2,
+   "cuentas": 2,
+   "cuentas_correo": 2,
+   "cuentas_entra_id": 2,
+   "nombres_cuenta": 2,
+   "nombres_dispositivo": 2,
+   "urls": 5,
+   "archivos_hash": 1,
+   "archivos": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-2",
+   "titulo": "T-2",
+   "categoria": "CommandAndControl",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 77.3,
+   "detector": "D-2",
+   "titulo": "T-2",
+   "categoria": "CommandAndControl",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A2-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A3",
+   "minuto": 431.4,
+   "detector": "D-2",
+   "titulo": "T-2",
+   "categoria": "CommandAndControl",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A3-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A3-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A3-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A3-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-2": {
+    "alertas_calificadas": 4477,
+    "TP_%": 9.9,
+    "BP_%": 41.1,
+    "FP_%": 49.1
+   },
+   "T-2": {
+    "alertas_calificadas": 4477,
+    "TP_%": 9.9,
+    "BP_%": 41.1,
+    "FP_%": 49.1
+   },
+   "categoria CommandAndControl": {
+    "alertas_calificadas": 4934,
+    "TP_%": 11.9,
+    "BP_%": 43.2,
+    "FP_%": 44.9
+   }
+  }
+ }
+}

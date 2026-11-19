@@ -1,0 +1,27 @@
+====================================================================================================
+04_construir_expedientes  |  inicio 2026-11-02 21:06:19
+====================================================================================================
+
+[PASO 1] Calcular la base de conocimiento con las organizaciones de desarrollo que no aportan incidentes a la muestra
+  Por qué: Las estadísticas no deben contener información de las organizaciones evaluadas; además se excluyen las organizaciones de la muestra de desarrollo, para que los prompts se ajusten en la misma situación que la evaluación (detectores de organizaciones que la base de conocimiento no ha visto).
+  Alertas calificadas: 79,806 de 59,409 incidentes de organizaciones de desarrollo (sin las de la muestra).
+  detector: 1,373 códigos; con soporte >= 20: 246.
+  titulo: 6,797 códigos; con soporte >= 20: 366.
+  categoria: 19 códigos; con soporte >= 20: 17.
+
+[PASO 2] Cargar la tabla de técnicas de MITRE ATT&CK
+  Por qué: Las técnicas de GUIDE son identificadores (T1078); el nombre y la táctica los hacen interpretables.
+  Técnicas en la tabla: 867.
+
+[PASO 3] Construir el expediente de cada incidente de la muestra
+  Por qué: Es la entrada común de las tres condiciones.
+  Expedientes: 375. Tokens estimados: mediana 248, p95 554, máx 3124.
+  Técnicas no encontradas en ATT&CK: ninguna.
+  Expedientes que superan el presupuesto de 4000 tokens: 0.
+
+[PASO 4] Referencia estadística de la base de conocimiento
+  Por qué: Mide cuánto acierta la regla de la clase con mayor porcentaje histórico, sin razonamiento.
+  desarrollo: {'n': 75, 'exactitud_%': 46.7, 'f1_macro_%': 44.2, 'con_historial_%': np.float64(74.67), 'exactitud_con_historial_%': 41.1, 'exactitud_todo_BP_%': np.float64(42.7), 'f1_macro_todo_BP_%': 19.9}
+  evaluacion: {'n': 300, 'exactitud_%': 50.0, 'f1_macro_%': 47.7, 'con_historial_%': np.float64(72.0), 'exactitud_con_historial_%': 45.8, 'exactitud_todo_BP_%': np.float64(50.3), 'f1_macro_todo_BP_%': 22.3}
+
+Fin de 04_construir_expedientes: 6.2 s

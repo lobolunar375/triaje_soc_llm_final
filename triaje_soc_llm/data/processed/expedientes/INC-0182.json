@@ -1,0 +1,110 @@
+{
+ "incidente": "INC-0182",
+ "resumen": {
+  "alertas": 2,
+  "evidencias": 6,
+  "duracion_min": 373.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "InitialAccess": 2
+  },
+  "entidades_distintas": {
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1,
+   "mensajes_correo": 2
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-13",
+   "titulo": "T-11",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1566"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 373.0,
+   "detector": "D-13",
+   "titulo": "T-11",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1566"
+   ],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1566",
+    "nombre": "Phishing",
+    "tacticas": "initial-access"
+   }
+  ],
+  "historial": {
+   "D-13": {
+    "alertas_calificadas": 1858,
+    "TP_%": 24.4,
+    "BP_%": 73.8,
+    "FP_%": 1.8
+   },
+   "T-11": {
+    "alertas_calificadas": 1858,
+    "TP_%": 24.4,
+    "BP_%": 73.8,
+    "FP_%": 1.8
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   }
+  }
+ }
+}

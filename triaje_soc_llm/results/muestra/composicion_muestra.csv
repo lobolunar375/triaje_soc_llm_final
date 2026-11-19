@@ -1,0 +1,8 @@
+conjunto,organizaciones,incidentes,TruePositive,BenignPositive,FalsePositive,p_chi2,p_chi2_grupo,alertas_media,evidencias_media
+Población elegible,5339,705908,20.55,49.04,30.41,,,,
+Grupo de organizaciones de desarrollo,1068,186832,15.8,45.25,38.94,,,,
+Grupo de organizaciones de evaluación,4271,519076,22.26,50.4,27.34,,,,
+Desarrollo,37,75,21.33,42.67,36.0,0.493,0.421,1.35,10.39
+Evaluación,193,300,25.0,50.33,24.67,0.044,0.407,1.44,9.58
+Submuestra C0,37,40,27.5,52.5,20.0,0.292,0.518,1.1,7.2
+Auditoría,52,60,26.67,40.0,33.33,0.323,0.272,1.18,18.42

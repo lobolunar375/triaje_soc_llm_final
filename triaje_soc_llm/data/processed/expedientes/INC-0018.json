@@ -1,0 +1,82 @@
+{
+ "incidente": "INC-0018",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 3,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Discovery": 1
+  },
+  "entidades_distintas": {
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1,
+   "nombres_dispositivo": 2
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-240",
+   "titulo": "T-222",
+   "categoria": "Discovery",
+   "tecnicas": [
+    "T1087",
+    "T1087.002"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Machine",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1087",
+    "nombre": "Account Discovery",
+    "tacticas": "discovery"
+   },
+   {
+    "tecnica": "T1087.002",
+    "nombre": "Domain Account",
+    "tacticas": "discovery"
+   }
+  ],
+  "historial": {
+   "D-240": {
+    "alertas_calificadas": 7,
+    "nota": "historial insuficiente"
+   },
+   "T-222": {
+    "alertas_calificadas": 7,
+    "nota": "historial insuficiente"
+   },
+   "categoria Discovery": {
+    "alertas_calificadas": 1130,
+    "TP_%": 8.4,
+    "BP_%": 60.4,
+    "FP_%": 31.2
+   }
+  }
+ }
+}

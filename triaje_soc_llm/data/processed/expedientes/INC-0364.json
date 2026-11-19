@@ -1,0 +1,52 @@
+{
+ "incidente": "INC-0364",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 1,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "SuspiciousActivity": 1
+  },
+  "entidades_distintas": {
+   "nombres_dispositivo": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-445",
+   "titulo": "T-112990",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-445": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-112990": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria SuspiciousActivity": {
+    "alertas_calificadas": 11308,
+    "TP_%": 34.2,
+    "BP_%": 47.7,
+    "FP_%": 18.1
+   }
+  }
+ }
+}

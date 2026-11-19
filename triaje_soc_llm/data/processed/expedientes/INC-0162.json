@@ -1,0 +1,90 @@
+{
+ "incidente": "INC-0162",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 5,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "CommandAndControl": 1
+  },
+  "entidades_distintas": {
+   "dispositivos": 1,
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1,
+   "nombres_dispositivo": 1,
+   "urls": 2,
+   "archivos_hash": 1,
+   "archivos": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-2",
+   "titulo": "T-2",
+   "categoria": "CommandAndControl",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-2": {
+    "alertas_calificadas": 4477,
+    "TP_%": 9.9,
+    "BP_%": 41.1,
+    "FP_%": 49.1
+   },
+   "T-2": {
+    "alertas_calificadas": 4477,
+    "TP_%": 9.9,
+    "BP_%": 41.1,
+    "FP_%": 49.1
+   },
+   "categoria CommandAndControl": {
+    "alertas_calificadas": 4934,
+    "TP_%": 11.9,
+    "BP_%": 43.2,
+    "FP_%": 44.9
+   }
+  }
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "incidente": "INC-0120",
+ "resumen": {
+  "alertas": 2,
+  "evidencias": 5,
+  "duracion_min": 32.9,
+  "detectores_distintos": 2,
+  "categorias": {
+   "Persistence": 2
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 1,
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-1966",
+   "titulo": "T-4803",
+   "categoria": "Persistence",
+   "tecnicas": [
+    "T1098"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "CloudLogonSession",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 32.9,
+   "detector": "D-5513",
+   "titulo": "T-42260",
+   "categoria": "Persistence",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1098",
+    "nombre": "Account Manipulation",
+    "tacticas": "persistence;privilege-escalation"
+   }
+  ],
+  "historial": {
+   "D-1966": {
+    "alertas_calificadas": 3,
+    "nota": "historial insuficiente"
+   },
+   "T-4803": {
+    "alertas_calificadas": 3,
+    "nota": "historial insuficiente"
+   },
+   "categoria Persistence": {
+    "alertas_calificadas": 781,
+    "TP_%": 3.3,
+    "BP_%": 73.1,
+    "FP_%": 23.6
+   },
+   "D-5513": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-42260": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   }
+  }
+ }
+}

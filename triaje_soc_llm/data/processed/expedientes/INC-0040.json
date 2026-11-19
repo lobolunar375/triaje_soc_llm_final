@@ -1,0 +1,151 @@
+{
+ "incidente": "INC-0040",
+ "resumen": {
+  "alertas": 4,
+  "evidencias": 25,
+  "duracion_min": 796.5,
+  "detectores_distintos": 1,
+  "categorias": {
+   "SuspiciousActivity": 4
+  },
+  "entidades_distintas": {
+   "dispositivos": 4,
+   "direcciones_ip": 9,
+   "nombres_cuenta": 9,
+   "nombres_dispositivo": 4
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-613",
+   "titulo": "T-796",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 315.8,
+   "detector": "D-613",
+   "titulo": "T-796",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 2
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 2
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A3",
+   "minuto": 764.0,
+   "detector": "D-613",
+   "titulo": "T-796",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A3-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 4
+    },
+    {
+     "id": "A3-E2",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 4
+    },
+    {
+     "id": "A3-E3",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 3
+    }
+   ]
+  },
+  {
+   "id": "A4",
+   "minuto": 796.5,
+   "detector": "D-613",
+   "titulo": "T-796",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A4-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 2
+    },
+    {
+     "id": "A4-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 2
+    },
+    {
+     "id": "A4-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 2
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-613": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-796": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria SuspiciousActivity": {
+    "alertas_calificadas": 11308,
+    "TP_%": 34.2,
+    "BP_%": 47.7,
+    "FP_%": 18.1
+   }
+  }
+ }
+}

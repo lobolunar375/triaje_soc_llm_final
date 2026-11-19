@@ -1,0 +1,888 @@
+{
+ "incidente": "INC-0146",
+ "resumen": {
+  "alertas": 19,
+  "evidencias": 66,
+  "duracion_min": 639.8,
+  "detectores_distintos": 12,
+  "categorias": {
+   "SuspiciousActivity": 7,
+   "LateralMovement": 6,
+   "Malware": 4,
+   "PrivilegeEscalation": 1,
+   "CredentialAccess": 1
+  },
+  "entidades_distintas": {
+   "dispositivos": 2,
+   "direcciones_ip": 1,
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1,
+   "nombres_dispositivo": 4,
+   "archivos_hash": 3,
+   "archivos": 6,
+   "claves_registro": 3
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-3448",
+   "titulo": "T-15324",
+   "categoria": "PrivilegeEscalation",
+   "tecnicas": [
+    "T1484"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Machine",
+     "rol": "Related",
+     "n": 2
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 40.2,
+   "detector": "D-4328",
+   "titulo": "T-24689",
+   "categoria": "LateralMovement",
+   "tecnicas": [
+    "T1021.002"
+   ],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A3",
+   "minuto": 83.4,
+   "detector": "D-176",
+   "titulo": "T-144",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A3-E1",
+     "tipo": "AzureResource",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A3-E2",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A3-E3",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A3-E4",
+     "tipo": "Malware",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A4",
+   "minuto": 103.9,
+   "detector": "D-176",
+   "titulo": "T-144",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A4-E1",
+     "tipo": "AzureResource",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A4-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A4-E3",
+     "tipo": "Malware",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A5",
+   "minuto": 133.3,
+   "detector": "D-1129",
+   "titulo": "T-821",
+   "categoria": "LateralMovement",
+   "tecnicas": [
+    "T1003.002",
+    "T1003.004",
+    "T1012"
+   ],
+   "evidencias": [
+    {
+     "id": "A5-E1",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A5-E2",
+     "tipo": "RegistryKey",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A5-E3",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A5-E4",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A5-E5",
+     "tipo": "RegistryValue",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A5-E6",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Incriminated",
+     "veredicto": "Malicious"
+    }
+   ]
+  },
+  {
+   "id": "A6",
+   "minuto": 204.6,
+   "detector": "D-936",
+   "titulo": "T-33984",
+   "categoria": "LateralMovement",
+   "tecnicas": [
+    "T1021.006",
+    "T1047"
+   ],
+   "evidencias": [
+    {
+     "id": "A6-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A6-E2",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A7",
+   "minuto": 274.8,
+   "detector": "D-1089",
+   "titulo": "T-57020",
+   "categoria": "Malware",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A7-E1",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A7-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A8",
+   "minuto": 297.4,
+   "detector": "D-176",
+   "titulo": "T-144",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A8-E1",
+     "tipo": "AzureResource",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A8-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A8-E3",
+     "tipo": "Malware",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A9",
+   "minuto": 309.0,
+   "detector": "D-176",
+   "titulo": "T-144",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A9-E1",
+     "tipo": "AzureResource",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A9-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A9-E3",
+     "tipo": "Malware",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A10",
+   "minuto": 316.8,
+   "detector": "D-1089",
+   "titulo": "T-57039",
+   "categoria": "Malware",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A10-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A10-E2",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Malicious"
+    }
+   ]
+  },
+  {
+   "id": "A11",
+   "minuto": 317.2,
+   "detector": "D-929",
+   "titulo": "T-1569",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [
+    "T1021.002",
+    "T1047",
+    "T1550.002",
+    "T1569.002"
+   ],
+   "evidencias": [
+    {
+     "id": "A11-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A11-E2",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Malicious"
+    }
+   ]
+  },
+  {
+   "id": "A12",
+   "minuto": 343.3,
+   "detector": "D-4561",
+   "titulo": "T-29087",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [
+    "T1550.002"
+   ],
+   "evidencias": [
+    {
+     "id": "A12-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A12-E2",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Malicious"
+    }
+   ]
+  },
+  {
+   "id": "A13",
+   "minuto": 354.9,
+   "detector": "D-315",
+   "titulo": "T-314",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1003",
+    "T1003.002",
+    "T1003.004",
+    "T1012"
+   ],
+   "evidencias": [
+    {
+     "id": "A13-E1",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A13-E2",
+     "tipo": "RegistryKey",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A13-E3",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A13-E4",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A13-E5",
+     "tipo": "RegistryValue",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A13-E6",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Incriminated",
+     "veredicto": "Malicious"
+    }
+   ]
+  },
+  {
+   "id": "A14",
+   "minuto": 377.9,
+   "detector": "D-31",
+   "titulo": "T-436",
+   "categoria": "Malware",
+   "tecnicas": [
+    "T1105"
+   ],
+   "evidencias": [
+    {
+     "id": "A14-E1",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A14-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A15",
+   "minuto": 407.2,
+   "detector": "D-176",
+   "titulo": "T-144",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A15-E1",
+     "tipo": "AzureResource",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A15-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A15-E3",
+     "tipo": "Malware",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A16",
+   "minuto": 529.0,
+   "detector": "D-1130",
+   "titulo": "T-821",
+   "categoria": "LateralMovement",
+   "tecnicas": [
+    "T1003.002",
+    "T1003.004",
+    "T1012"
+   ],
+   "evidencias": [
+    {
+     "id": "A16-E1",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A16-E2",
+     "tipo": "RegistryKey",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A16-E3",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A16-E4",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A16-E5",
+     "tipo": "RegistryValue",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A16-E6",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Incriminated",
+     "veredicto": "Malicious"
+    }
+   ]
+  },
+  {
+   "id": "A17",
+   "minuto": 532.0,
+   "detector": "D-936",
+   "titulo": "T-18941",
+   "categoria": "LateralMovement",
+   "tecnicas": [
+    "T1021.006",
+    "T1047"
+   ],
+   "evidencias": [
+    {
+     "id": "A17-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A17-E2",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A18",
+   "minuto": 553.9,
+   "detector": "D-2937",
+   "titulo": "T-10808",
+   "categoria": "LateralMovement",
+   "tecnicas": [
+    "T1021",
+    "T1078"
+   ],
+   "evidencias": [
+    {
+     "id": "A18-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A18-E2",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A19",
+   "minuto": 639.8,
+   "detector": "D-1089",
+   "titulo": "T-24721",
+   "categoria": "Malware",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A19-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A19-E2",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Malicious"
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1003",
+    "nombre": "OS Credential Dumping",
+    "tacticas": "credential-access"
+   },
+   {
+    "tecnica": "T1003.002",
+    "nombre": "Security Account Manager",
+    "tacticas": "credential-access"
+   },
+   {
+    "tecnica": "T1003.004",
+    "nombre": "LSA Secrets",
+    "tacticas": "credential-access"
+   },
+   {
+    "tecnica": "T1012",
+    "nombre": "Query Registry",
+    "tacticas": "discovery"
+   },
+   {
+    "tecnica": "T1021",
+    "nombre": "Remote Services",
+    "tacticas": "lateral-movement"
+   },
+   {
+    "tecnica": "T1021.002",
+    "nombre": "SMB/Windows Admin Shares",
+    "tacticas": "lateral-movement"
+   },
+   {
+    "tecnica": "T1021.006",
+    "nombre": "Windows Remote Management",
+    "tacticas": "lateral-movement"
+   },
+   {
+    "tecnica": "T1047",
+    "nombre": "Windows Management Instrumentation",
+    "tacticas": "execution"
+   },
+   {
+    "tecnica": "T1078",
+    "nombre": "Valid Accounts",
+    "tacticas": "stealth;persistence;privilege-escalation;initial-access"
+   },
+   {
+    "tecnica": "T1105",
+    "nombre": "Ingress Tool Transfer",
+    "tacticas": "command-and-control"
+   },
+   {
+    "tecnica": "T1484",
+    "nombre": "Domain or Tenant Policy Modification",
+    "tacticas": "defense-impairment;privilege-escalation"
+   },
+   {
+    "tecnica": "T1550.002",
+    "nombre": "Pass the Hash",
+    "tacticas": "lateral-movement"
+   },
+   {
+    "tecnica": "T1569.002",
+    "nombre": "Service Execution",
+    "tacticas": "execution"
+   }
+  ],
+  "historial": {
+   "D-3448": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-15324": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria PrivilegeEscalation": {
+    "alertas_calificadas": 135,
+    "TP_%": 1.5,
+    "BP_%": 87.4,
+    "FP_%": 11.1
+   },
+   "D-4328": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-24689": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria LateralMovement": {
+    "alertas_calificadas": 447,
+    "TP_%": 14.8,
+    "BP_%": 69.8,
+    "FP_%": 15.4
+   },
+   "D-176": {
+    "alertas_calificadas": 75,
+    "TP_%": 66.7,
+    "BP_%": 32.0,
+    "FP_%": 1.3
+   },
+   "T-144": {
+    "alertas_calificadas": 75,
+    "TP_%": 66.7,
+    "BP_%": 32.0,
+    "FP_%": 1.3
+   },
+   "categoria SuspiciousActivity": {
+    "alertas_calificadas": 11308,
+    "TP_%": 34.2,
+    "BP_%": 47.7,
+    "FP_%": 18.1
+   },
+   "D-1129": {
+    "alertas_calificadas": 3,
+    "nota": "historial insuficiente"
+   },
+   "T-821": {
+    "alertas_calificadas": 7,
+    "nota": "historial insuficiente"
+   },
+   "D-936": {
+    "alertas_calificadas": 7,
+    "nota": "historial insuficiente"
+   },
+   "T-33984": {
+    "alertas_calificadas": 1,
+    "nota": "historial insuficiente"
+   },
+   "D-1089": {
+    "alertas_calificadas": 9,
+    "nota": "historial insuficiente"
+   },
+   "T-57020": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria Malware": {
+    "alertas_calificadas": 3995,
+    "TP_%": 37.4,
+    "BP_%": 22.1,
+    "FP_%": 40.5
+   },
+   "T-57039": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "D-929": {
+    "alertas_calificadas": 4,
+    "nota": "historial insuficiente"
+   },
+   "T-1569": {
+    "alertas_calificadas": 4,
+    "nota": "historial insuficiente"
+   },
+   "D-4561": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-29087": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "D-315": {
+    "alertas_calificadas": 84,
+    "TP_%": 100.0,
+    "BP_%": 0.0,
+    "FP_%": 0.0
+   },
+   "T-314": {
+    "alertas_calificadas": 84,
+    "TP_%": 100.0,
+    "BP_%": 0.0,
+    "FP_%": 0.0
+   },
+   "categoria CredentialAccess": {
+    "alertas_calificadas": 2385,
+    "TP_%": 26.0,
+    "BP_%": 48.9,
+    "FP_%": 25.1
+   },
+   "D-31": {
+    "alertas_calificadas": 2177,
+    "TP_%": 16.9,
+    "BP_%": 18.1,
+    "FP_%": 65.1
+   },
+   "T-436": {
+    "alertas_calificadas": 52,
+    "TP_%": 53.8,
+    "BP_%": 36.5,
+    "FP_%": 9.6
+   },
+   "D-1130": {
+    "alertas_calificadas": 3,
+    "nota": "historial insuficiente"
+   },
+   "T-18941": {
+    "alertas_calificadas": 5,
+    "nota": "historial insuficiente"
+   },
+   "D-2937": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-10808": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-24721": {
+    "alertas_calificadas": 4,
+    "nota": "historial insuficiente"
+   }
+  }
+ }
+}

@@ -1,0 +1,66 @@
+{
+ "incidente": "INC-0174",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 1,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "InitialAccess": 1
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-1789",
+   "titulo": "T-4094",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1189",
+    "T1190"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1189",
+    "nombre": "Drive-by Compromise",
+    "tacticas": "initial-access"
+   },
+   {
+    "tecnica": "T1190",
+    "nombre": "Exploit Public-Facing Application",
+    "tacticas": "initial-access"
+   }
+  ],
+  "historial": {
+   "D-1789": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-4094": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   }
+  }
+ }
+}

@@ -1,0 +1,60 @@
+{
+ "incidente": "INC-0067",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 1,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Impact": 1
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-137",
+   "titulo": "T-116",
+   "categoria": "Impact",
+   "tecnicas": [
+    "T1485"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1485",
+    "nombre": "Data Destruction",
+    "tacticas": "impact"
+   }
+  ],
+  "historial": {
+   "D-137": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-116": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria Impact": {
+    "alertas_calificadas": 610,
+    "TP_%": 14.1,
+    "BP_%": 83.0,
+    "FP_%": 3.0
+   }
+  }
+ }
+}

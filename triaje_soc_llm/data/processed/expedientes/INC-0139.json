@@ -1,0 +1,636 @@
+{
+ "incidente": "INC-0139",
+ "resumen": {
+  "alertas": 17,
+  "evidencias": 67,
+  "duracion_min": 1501.4,
+  "detectores_distintos": 2,
+  "categorias": {
+   "InitialAccess": 17
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 15,
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-0",
+   "titulo": "T-0",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1078",
+    "T1078.004"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "CloudLogonSession",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 118.7,
+   "detector": "D-4",
+   "titulo": "T-3",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 2
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A3",
+   "minuto": 220.4,
+   "detector": "D-0",
+   "titulo": "T-0",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1078",
+    "T1078.004"
+   ],
+   "evidencias": [
+    {
+     "id": "A3-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A3-E2",
+     "tipo": "CloudLogonSession",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A3-E3",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A3-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A4",
+   "minuto": 470.9,
+   "detector": "D-4",
+   "titulo": "T-3",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A4-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 2
+    },
+    {
+     "id": "A4-E2",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A4-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A5",
+   "minuto": 609.5,
+   "detector": "D-0",
+   "titulo": "T-0",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1078",
+    "T1078.004"
+   ],
+   "evidencias": [
+    {
+     "id": "A5-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A5-E2",
+     "tipo": "CloudLogonSession",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A5-E3",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A5-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A6",
+   "minuto": 703.7,
+   "detector": "D-0",
+   "titulo": "T-0",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1078",
+    "T1078.004"
+   ],
+   "evidencias": [
+    {
+     "id": "A6-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A6-E2",
+     "tipo": "CloudLogonSession",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A6-E3",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A6-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A7",
+   "minuto": 739.1,
+   "detector": "D-0",
+   "titulo": "T-0",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1078",
+    "T1078.004"
+   ],
+   "evidencias": [
+    {
+     "id": "A7-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A7-E2",
+     "tipo": "CloudLogonSession",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A7-E3",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A7-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A8",
+   "minuto": 852.8,
+   "detector": "D-4",
+   "titulo": "T-3",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A8-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 2
+    },
+    {
+     "id": "A8-E2",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A8-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A9",
+   "minuto": 954.2,
+   "detector": "D-0",
+   "titulo": "T-0",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1078",
+    "T1078.004"
+   ],
+   "evidencias": [
+    {
+     "id": "A9-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A9-E2",
+     "tipo": "CloudLogonSession",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A9-E3",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A9-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A10",
+   "minuto": 1039.5,
+   "detector": "D-4",
+   "titulo": "T-3",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A10-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 2
+    },
+    {
+     "id": "A10-E2",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A10-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A11",
+   "minuto": 1050.3,
+   "detector": "D-4",
+   "titulo": "T-3",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A11-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 2
+    },
+    {
+     "id": "A11-E2",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A11-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A12",
+   "minuto": 1085.6,
+   "detector": "D-0",
+   "titulo": "T-0",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1078",
+    "T1078.004"
+   ],
+   "evidencias": [
+    {
+     "id": "A12-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A12-E2",
+     "tipo": "CloudLogonSession",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A12-E3",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A12-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A13",
+   "minuto": 1163.6,
+   "detector": "D-0",
+   "titulo": "T-0",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1078",
+    "T1078.004"
+   ],
+   "evidencias": [
+    {
+     "id": "A13-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A13-E2",
+     "tipo": "CloudLogonSession",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A13-E3",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A13-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A14",
+   "minuto": 1231.0,
+   "detector": "D-0",
+   "titulo": "T-0",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1078",
+    "T1078.004"
+   ],
+   "evidencias": [
+    {
+     "id": "A14-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A14-E2",
+     "tipo": "CloudLogonSession",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A14-E3",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A14-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A15",
+   "minuto": 1323.6,
+   "detector": "D-4",
+   "titulo": "T-3",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A15-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 2
+    },
+    {
+     "id": "A15-E2",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A15-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A16",
+   "minuto": 1328.0,
+   "detector": "D-0",
+   "titulo": "T-0",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1078",
+    "T1078.004"
+   ],
+   "evidencias": [
+    {
+     "id": "A16-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A16-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A16-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A17",
+   "minuto": 1501.4,
+   "detector": "D-0",
+   "titulo": "T-0",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1078",
+    "T1078.004"
+   ],
+   "evidencias": [
+    {
+     "id": "A17-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A17-E2",
+     "tipo": "CloudLogonSession",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A17-E3",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A17-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1078",
+    "nombre": "Valid Accounts",
+    "tacticas": "stealth;persistence;privilege-escalation;initial-access"
+   },
+   {
+    "tecnica": "T1078.004",
+    "nombre": "Cloud Accounts",
+    "tacticas": "stealth;persistence;privilege-escalation;initial-access"
+   }
+  ],
+  "historial": {
+   "D-0": {
+    "alertas_calificadas": 7682,
+    "TP_%": 12.3,
+    "BP_%": 13.6,
+    "FP_%": 74.1
+   },
+   "T-0": {
+    "alertas_calificadas": 7682,
+    "TP_%": 12.3,
+    "BP_%": 13.6,
+    "FP_%": 74.1
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   },
+   "D-4": {
+    "alertas_calificadas": 1637,
+    "TP_%": 17.4,
+    "BP_%": 27.6,
+    "FP_%": 55.0
+   },
+   "T-3": {
+    "alertas_calificadas": 1637,
+    "TP_%": 17.4,
+    "BP_%": 27.6,
+    "FP_%": 55.0
+   }
+  }
+ }
+}

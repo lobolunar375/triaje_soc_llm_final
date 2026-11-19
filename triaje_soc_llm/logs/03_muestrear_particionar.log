@@ -1,0 +1,31 @@
+====================================================================================================
+03_muestrear_particionar  |  inicio 2026-11-02 21:05:36
+====================================================================================================
+  Población elegible: 705,908 incidentes de 5,339 organizaciones.
+
+[PASO 1] Tamaño de muestra para McNemar (Connor, 1987)
+  Por qué: H.E.1 y H.E.3 se contrastan con McNemar; se usa el nivel más exigente de Holm para tres hipótesis.
+  delta = 0.1, psi = 0.25, alfa = 0.0167, potencia = 0.8 -> n mínimo = 259. Muestra de evaluación fijada: 300.
+  Sensibilidad al supuesto de psi: {'psi=0.15': 155, 'psi=0.2': 207, 'psi=0.25': 259, 'psi=0.3': 312}
+  Submuestra C0 (Wilcoxon, eficiencia relativa asintótica 0,864): t pareada con d_z = 0,6 -> 32; Wilcoxon -> 38. Submuestra fijada: 40.
+
+[PASO 2] Asignar organizaciones a desarrollo y evaluación con semilla fija
+  Por qué: La organización es la unidad de partición para evitar fuga entre conjuntos.
+  Organizaciones de desarrollo: 1,068; de evaluación: 4,271.
+  Incidentes por grupo: {'evaluacion': 519076, 'desarrollo': 186832}
+
+[PASO 3] Muestreo aleatorio simple dentro de cada grupo
+  Por qué: Cada incidente del grupo tiene la misma probabilidad de ser elegido.
+
+[PASO 4] Comparar la distribución de clases de cada conjunto con la población
+  Por qué: El muestreo aleatorio simple debe reproducir la distribución poblacional salvo variación aleatoria.
+                                    conjunto  organizaciones  incidentes  TruePositive  BenignPositive  FalsePositive  p_chi2  p_chi2_grupo  alertas_media  evidencias_media
+    0                     Población elegible            5339      705908         20.55           49.04          30.41     NaN           NaN            NaN               NaN
+    1  Grupo de organizaciones de desarrollo            1068      186832         15.80           45.25          38.94     NaN           NaN            NaN               NaN
+    2  Grupo de organizaciones de evaluación            4271      519076         22.26           50.40          27.34     NaN           NaN            NaN               NaN
+    3                             Desarrollo              37          75         21.33           42.67          36.00   0.493         0.421           1.35             10.39
+    4                             Evaluación             193         300         25.00           50.33          24.67   0.044         0.407           1.44              9.58
+    5                          Submuestra C0              37          40         27.50           52.50          20.00   0.292         0.518           1.10              7.20
+    6                              Auditoría              52          60         26.67           40.00          33.33   0.323         0.272           1.18             18.42
+
+Fin de 03_muestrear_particionar: 1.2 s

@@ -1,0 +1,87 @@
+{
+ "incidente": "INC-0360",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 5,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "InitialAccess": 1
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 2,
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1,
+   "aplicaciones": 2
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-73",
+   "titulo": "T-54",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1078",
+    "T1078.004"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 2
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 2
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1078",
+    "nombre": "Valid Accounts",
+    "tacticas": "stealth;persistence;privilege-escalation;initial-access"
+   },
+   {
+    "tecnica": "T1078.004",
+    "nombre": "Cloud Accounts",
+    "tacticas": "stealth;persistence;privilege-escalation;initial-access"
+   }
+  ],
+  "historial": {
+   "D-73": {
+    "alertas_calificadas": 308,
+    "TP_%": 28.2,
+    "BP_%": 46.4,
+    "FP_%": 25.3
+   },
+   "T-54": {
+    "alertas_calificadas": 308,
+    "TP_%": 28.2,
+    "BP_%": 46.4,
+    "FP_%": 25.3
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   }
+  }
+ }
+}

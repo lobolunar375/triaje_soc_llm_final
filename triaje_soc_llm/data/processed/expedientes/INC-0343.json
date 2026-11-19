@@ -1,0 +1,102 @@
+{
+ "incidente": "INC-0343",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 4,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "CredentialAccess": 1
+  },
+  "entidades_distintas": {
+   "dispositivos": 1,
+   "nombres_dispositivo": 1,
+   "archivos_hash": 1,
+   "archivos": 1,
+   "claves_registro": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-56",
+   "titulo": "T-40",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1003",
+    "T1012",
+    "T1552.002"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "RegistryKey",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E4",
+     "tipo": "RegistryValue",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1003",
+    "nombre": "OS Credential Dumping",
+    "tacticas": "credential-access"
+   },
+   {
+    "tecnica": "T1012",
+    "nombre": "Query Registry",
+    "tacticas": "discovery"
+   },
+   {
+    "tecnica": "T1552.002",
+    "nombre": "Credentials in Registry",
+    "tacticas": "credential-access"
+   }
+  ],
+  "historial": {
+   "D-56": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-40": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria CredentialAccess": {
+    "alertas_calificadas": 2385,
+    "TP_%": 26.0,
+    "BP_%": 48.9,
+    "FP_%": 25.1
+   }
+  }
+ }
+}

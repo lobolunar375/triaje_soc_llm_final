@@ -1,0 +1,62 @@
+{
+ "incidente": "INC-0068",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 2,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Execution": 1
+  },
+  "entidades_distintas": {
+   "archivos_hash": 1,
+   "archivos": 1,
+   "aplicaciones": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-9",
+   "titulo": "T-47",
+   "categoria": "Execution",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-9": {
+    "alertas_calificadas": 2952,
+    "TP_%": 43.8,
+    "BP_%": 36.0,
+    "FP_%": 20.2
+   },
+   "T-47": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria Execution": {
+    "alertas_calificadas": 4108,
+    "TP_%": 39.3,
+    "BP_%": 38.6,
+    "FP_%": 22.1
+   }
+  }
+ }
+}

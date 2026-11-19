@@ -1,0 +1,48 @@
+{
+ "type": "object",
+ "properties": {
+  "clase": {
+   "type": "string",
+   "enum": [
+    "TP",
+    "BP",
+    "FP"
+   ]
+  },
+  "confianza": {
+   "type": "number",
+   "minimum": 0,
+   "maximum": 1
+  },
+  "prioridad": {
+   "type": "string",
+   "enum": [
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+   ]
+  },
+  "escalar": {
+   "type": "boolean"
+  },
+  "justificacion": {
+   "type": "string"
+  },
+  "evidencias": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "minItems": 1
+  }
+ },
+ "required": [
+  "clase",
+  "confianza",
+  "prioridad",
+  "escalar",
+  "justificacion",
+  "evidencias"
+ ]
+}

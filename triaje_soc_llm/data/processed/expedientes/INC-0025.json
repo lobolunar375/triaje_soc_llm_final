@@ -1,0 +1,78 @@
+{
+ "incidente": "INC-0025",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 5,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "InitialAccess": 1
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 1,
+   "nombres_cuenta": 1,
+   "nombres_dispositivo": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-1659",
+   "titulo": "T-1115",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "AzureResource",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "GenericEntity",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E4",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E5",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-1659": {
+    "alertas_calificadas": 5,
+    "nota": "historial insuficiente"
+   },
+   "T-1115": {
+    "alertas_calificadas": 10,
+    "nota": "historial insuficiente"
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   }
+  }
+ }
+}

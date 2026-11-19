@@ -1,0 +1,84 @@
+{
+ "incidente": "INC-0229",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 103,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Exfiltration": 1
+  },
+  "entidades_distintas": {
+   "cuentas": 17,
+   "cuentas_correo": 17,
+   "cuentas_entra_id": 17,
+   "nombres_cuenta": 17,
+   "nombres_dispositivo": 17,
+   "urls": 16,
+   "archivos": 53
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-569",
+   "titulo": "T-637",
+   "categoria": "Exfiltration",
+   "tecnicas": [
+    "T1537"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 53
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 17
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 17
+    },
+    {
+     "id": "A1-E4",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 16
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1537",
+    "nombre": "Transfer Data to Cloud Account",
+    "tacticas": "exfiltration"
+   }
+  ],
+  "historial": {
+   "D-569": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-637": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria Exfiltration": {
+    "alertas_calificadas": 11961,
+    "TP_%": 2.5,
+    "BP_%": 80.7,
+    "FP_%": 16.8
+   }
+  }
+ }
+}

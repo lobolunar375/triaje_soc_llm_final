@@ -1,0 +1,104 @@
+{
+  "n_minimo_mcnemar": 259,
+  "sensibilidad_psi": {
+    "psi=0.15": 155,
+    "psi=0.2": 207,
+    "psi=0.25": 259,
+    "psi=0.3": 312
+  },
+  "n_t_pareada_c0": 32,
+  "n_minimo_c0": 38,
+  "alfa_holm": 0.016666666666666666,
+  "organizaciones_desarrollo": 1068,
+  "organizaciones_evaluacion": 4271,
+  "incidentes_por_grupo": {
+    "evaluacion": 519076,
+    "desarrollo": 186832
+  },
+  "composicion": [
+    {
+      "conjunto": "Población elegible",
+      "organizaciones": 5339,
+      "incidentes": 705908,
+      "TruePositive": 20.55,
+      "BenignPositive": 49.04,
+      "FalsePositive": 30.41,
+      "p_chi2": NaN,
+      "p_chi2_grupo": NaN,
+      "alertas_media": NaN,
+      "evidencias_media": NaN
+    },
+    {
+      "conjunto": "Grupo de organizaciones de desarrollo",
+      "organizaciones": 1068,
+      "incidentes": 186832,
+      "TruePositive": 15.8,
+      "BenignPositive": 45.25,
+      "FalsePositive": 38.94,
+      "p_chi2": NaN,
+      "p_chi2_grupo": NaN,
+      "alertas_media": NaN,
+      "evidencias_media": NaN
+    },
+    {
+      "conjunto": "Grupo de organizaciones de evaluación",
+      "organizaciones": 4271,
+      "incidentes": 519076,
+      "TruePositive": 22.26,
+      "BenignPositive": 50.4,
+      "FalsePositive": 27.34,
+      "p_chi2": NaN,
+      "p_chi2_grupo": NaN,
+      "alertas_media": NaN,
+      "evidencias_media": NaN
+    },
+    {
+      "conjunto": "Desarrollo",
+      "organizaciones": 37,
+      "incidentes": 75,
+      "TruePositive": 21.33,
+      "BenignPositive": 42.67,
+      "FalsePositive": 36.0,
+      "p_chi2": 0.493,
+      "p_chi2_grupo": 0.421,
+      "alertas_media": 1.35,
+      "evidencias_media": 10.39
+    },
+    {
+      "conjunto": "Evaluación",
+      "organizaciones": 193,
+      "incidentes": 300,
+      "TruePositive": 25.0,
+      "BenignPositive": 50.33,
+      "FalsePositive": 24.67,
+      "p_chi2": 0.044,
+      "p_chi2_grupo": 0.407,
+      "alertas_media": 1.44,
+      "evidencias_media": 9.58
+    },
+    {
+      "conjunto": "Submuestra C0",
+      "organizaciones": 37,
+      "incidentes": 40,
+      "TruePositive": 27.5,
+      "BenignPositive": 52.5,
+      "FalsePositive": 20.0,
+      "p_chi2": 0.292,
+      "p_chi2_grupo": 0.518,
+      "alertas_media": 1.1,
+      "evidencias_media": 7.2
+    },
+    {
+      "conjunto": "Auditoría",
+      "organizaciones": 52,
+      "incidentes": 60,
+      "TruePositive": 26.67,
+      "BenignPositive": 40.0,
+      "FalsePositive": 33.33,
+      "p_chi2": 0.323,
+      "p_chi2_grupo": 0.272,
+      "alertas_media": 1.18,
+      "evidencias_media": 18.42
+    }
+  ]
+}

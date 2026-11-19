@@ -1,0 +1,59 @@
+{
+ "incidente": "INC-0164",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 3,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Execution": 1
+  },
+  "entidades_distintas": {
+   "dispositivos": 2,
+   "nombres_dispositivo": 2
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-5320",
+   "titulo": "T-5526",
+   "categoria": "Execution",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 2
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "GenericEntity",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-5320": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-5526": {
+    "alertas_calificadas": 1,
+    "nota": "historial insuficiente"
+   },
+   "categoria Execution": {
+    "alertas_calificadas": 4108,
+    "TP_%": 39.3,
+    "BP_%": 38.6,
+    "FP_%": 22.1
+   }
+  }
+ }
+}

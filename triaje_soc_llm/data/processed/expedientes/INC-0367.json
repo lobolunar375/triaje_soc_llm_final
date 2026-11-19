@@ -1,0 +1,52 @@
+{
+ "incidente": "INC-0367",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 500,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Impact": 1
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 500
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-21",
+   "titulo": "T-52",
+   "categoria": "Impact",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 500
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-21": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-52": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria Impact": {
+    "alertas_calificadas": 610,
+    "TP_%": 14.1,
+    "BP_%": 83.0,
+    "FP_%": 3.0
+   }
+  }
+ }
+}

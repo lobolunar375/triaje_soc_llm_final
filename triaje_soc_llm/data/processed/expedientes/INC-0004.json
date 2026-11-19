@@ -1,0 +1,63 @@
+{
+ "incidente": "INC-0004",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 2,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "SuspiciousActivity": 1
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 1,
+   "aplicaciones": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-152",
+   "titulo": "T-623",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "CloudApplication",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-152": {
+    "alertas_calificadas": 308,
+    "TP_%": 26.3,
+    "BP_%": 52.9,
+    "FP_%": 20.8
+   },
+   "T-623": {
+    "alertas_calificadas": 23,
+    "TP_%": 26.1,
+    "BP_%": 34.8,
+    "FP_%": 39.1
+   },
+   "categoria SuspiciousActivity": {
+    "alertas_calificadas": 11308,
+    "TP_%": 34.2,
+    "BP_%": 47.7,
+    "FP_%": 18.1
+   }
+  }
+ }
+}

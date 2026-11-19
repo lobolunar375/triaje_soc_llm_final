@@ -1,0 +1,140 @@
+{
+ "incidente": "INC-0270",
+ "resumen": {
+  "alertas": 3,
+  "evidencias": 12,
+  "duracion_min": 177.9,
+  "detectores_distintos": 1,
+  "categorias": {
+   "InitialAccess": 3
+  },
+  "entidades_distintas": {
+   "cuentas": 4,
+   "cuentas_correo": 4,
+   "cuentas_entra_id": 4,
+   "nombres_cuenta": 4,
+   "mensajes_correo": 4
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-11",
+   "titulo": "T-9",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1566"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 85.1,
+   "detector": "D-11",
+   "titulo": "T-9",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1566"
+   ],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 2
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 2
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "id": "A3",
+   "minuto": 177.9,
+   "detector": "D-11",
+   "titulo": "T-9",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1566"
+   ],
+   "evidencias": [
+    {
+     "id": "A3-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A3-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A3-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1566",
+    "nombre": "Phishing",
+    "tacticas": "initial-access"
+   }
+  ],
+  "historial": {
+   "D-11": {
+    "alertas_calificadas": 1728,
+    "TP_%": 16.4,
+    "BP_%": 60.7,
+    "FP_%": 22.9
+   },
+   "T-9": {
+    "alertas_calificadas": 1728,
+    "TP_%": 16.4,
+    "BP_%": 60.7,
+    "FP_%": 22.9
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   }
+  }
+ }
+}

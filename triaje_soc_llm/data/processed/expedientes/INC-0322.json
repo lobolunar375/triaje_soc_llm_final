@@ -1,0 +1,551 @@
+{
+ "incidente": "INC-0322",
+ "resumen": {
+  "alertas": 15,
+  "evidencias": 45,
+  "duracion_min": 1220.8,
+  "detectores_distintos": 2,
+  "categorias": {
+   "CredentialAccess": 13,
+   "InitialAccess": 2
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 5,
+   "cuentas": 10,
+   "cuentas_correo": 10,
+   "cuentas_entra_id": 10,
+   "nombres_cuenta": 10
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-14",
+   "titulo": "T-12",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1110",
+    "T1110.001",
+    "T1110.003"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 332.2,
+   "detector": "D-14",
+   "titulo": "T-12",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1110",
+    "T1110.001",
+    "T1110.003"
+   ],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A3",
+   "minuto": 398.1,
+   "detector": "D-7",
+   "titulo": "T-6",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A3-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A3-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A3-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A4",
+   "minuto": 591.1,
+   "detector": "D-14",
+   "titulo": "T-12",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1110",
+    "T1110.001",
+    "T1110.003"
+   ],
+   "evidencias": [
+    {
+     "id": "A4-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A4-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A4-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A5",
+   "minuto": 752.1,
+   "detector": "D-7",
+   "titulo": "T-6",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A5-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A5-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A5-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A6",
+   "minuto": 867.9,
+   "detector": "D-14",
+   "titulo": "T-12",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1110",
+    "T1110.001",
+    "T1110.003"
+   ],
+   "evidencias": [
+    {
+     "id": "A6-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A6-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A6-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A7",
+   "minuto": 904.9,
+   "detector": "D-14",
+   "titulo": "T-12",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1110",
+    "T1110.001",
+    "T1110.003"
+   ],
+   "evidencias": [
+    {
+     "id": "A7-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A7-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A7-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A8",
+   "minuto": 958.2,
+   "detector": "D-14",
+   "titulo": "T-12",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1110",
+    "T1110.001",
+    "T1110.003"
+   ],
+   "evidencias": [
+    {
+     "id": "A8-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A8-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A8-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A9",
+   "minuto": 967.1,
+   "detector": "D-14",
+   "titulo": "T-12",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1110",
+    "T1110.001",
+    "T1110.003"
+   ],
+   "evidencias": [
+    {
+     "id": "A9-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A9-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A9-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A10",
+   "minuto": 988.8,
+   "detector": "D-14",
+   "titulo": "T-12",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1110",
+    "T1110.001",
+    "T1110.003"
+   ],
+   "evidencias": [
+    {
+     "id": "A10-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A10-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A10-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A11",
+   "minuto": 990.6,
+   "detector": "D-14",
+   "titulo": "T-12",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1110",
+    "T1110.001",
+    "T1110.003"
+   ],
+   "evidencias": [
+    {
+     "id": "A11-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A11-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A11-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A12",
+   "minuto": 993.8,
+   "detector": "D-14",
+   "titulo": "T-12",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1110",
+    "T1110.001",
+    "T1110.003"
+   ],
+   "evidencias": [
+    {
+     "id": "A12-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A12-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A12-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A13",
+   "minuto": 1090.0,
+   "detector": "D-14",
+   "titulo": "T-12",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1110",
+    "T1110.001",
+    "T1110.003"
+   ],
+   "evidencias": [
+    {
+     "id": "A13-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A13-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A13-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A14",
+   "minuto": 1131.2,
+   "detector": "D-14",
+   "titulo": "T-12",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1110",
+    "T1110.001",
+    "T1110.003"
+   ],
+   "evidencias": [
+    {
+     "id": "A14-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A14-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A14-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A15",
+   "minuto": 1220.8,
+   "detector": "D-14",
+   "titulo": "T-12",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1110",
+    "T1110.001",
+    "T1110.003"
+   ],
+   "evidencias": [
+    {
+     "id": "A15-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A15-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A15-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1110",
+    "nombre": "Brute Force",
+    "tacticas": "credential-access"
+   },
+   {
+    "tecnica": "T1110.001",
+    "nombre": "Password Guessing",
+    "tacticas": "credential-access"
+   },
+   {
+    "tecnica": "T1110.003",
+    "nombre": "Password Spraying",
+    "tacticas": "credential-access"
+   }
+  ],
+  "historial": {
+   "D-14": {
+    "alertas_calificadas": 519,
+    "TP_%": 52.0,
+    "BP_%": 29.7,
+    "FP_%": 18.3
+   },
+   "T-12": {
+    "alertas_calificadas": 519,
+    "TP_%": 52.0,
+    "BP_%": 29.7,
+    "FP_%": 18.3
+   },
+   "categoria CredentialAccess": {
+    "alertas_calificadas": 2385,
+    "TP_%": 26.0,
+    "BP_%": 48.9,
+    "FP_%": 25.1
+   },
+   "D-7": {
+    "alertas_calificadas": 840,
+    "TP_%": 46.7,
+    "BP_%": 43.5,
+    "FP_%": 9.9
+   },
+   "T-6": {
+    "alertas_calificadas": 840,
+    "TP_%": 46.7,
+    "BP_%": 43.5,
+    "FP_%": 9.9
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   }
+  }
+ }
+}

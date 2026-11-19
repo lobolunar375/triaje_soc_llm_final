@@ -1,0 +1,76 @@
+{
+ "incidente": "INC-0267",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 2,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Discovery": 1
+  },
+  "entidades_distintas": {
+   "nombres_dispositivo": 2
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-787",
+   "titulo": "T-1076",
+   "categoria": "Discovery",
+   "tecnicas": [
+    "T1018",
+    "T1046"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Machine",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1018",
+    "nombre": "Remote System Discovery",
+    "tacticas": "discovery"
+   },
+   {
+    "tecnica": "T1046",
+    "nombre": "Network Service Discovery",
+    "tacticas": "discovery"
+   }
+  ],
+  "historial": {
+   "D-787": {
+    "alertas_calificadas": 29,
+    "TP_%": 0.0,
+    "BP_%": 89.7,
+    "FP_%": 10.3
+   },
+   "T-1076": {
+    "alertas_calificadas": 29,
+    "TP_%": 0.0,
+    "BP_%": 89.7,
+    "FP_%": 10.3
+   },
+   "categoria Discovery": {
+    "alertas_calificadas": 1130,
+    "TP_%": 8.4,
+    "BP_%": 60.4,
+    "FP_%": 31.2
+   }
+  }
+ }
+}

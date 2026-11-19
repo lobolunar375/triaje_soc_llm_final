@@ -1,0 +1,72 @@
+{
+ "incidente": "INC-0065",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 4,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "InitialAccess": 1
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 2,
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-4",
+   "titulo": "T-3",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 2
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-4": {
+    "alertas_calificadas": 1637,
+    "TP_%": 17.4,
+    "BP_%": 27.6,
+    "FP_%": 55.0
+   },
+   "T-3": {
+    "alertas_calificadas": 1637,
+    "TP_%": 17.4,
+    "BP_%": 27.6,
+    "FP_%": 55.0
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   }
+  }
+ }
+}

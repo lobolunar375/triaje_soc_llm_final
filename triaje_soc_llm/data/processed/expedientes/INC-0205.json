@@ -1,0 +1,63 @@
+{
+ "incidente": "INC-0205",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 7,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "CredentialAccess": 1
+  },
+  "entidades_distintas": {
+   "cuentas": 7,
+   "cuentas_correo": 7,
+   "cuentas_entra_id": 7,
+   "nombres_cuenta": 7
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-172",
+   "titulo": "T-111",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1110"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 7
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1110",
+    "nombre": "Brute Force",
+    "tacticas": "credential-access"
+   }
+  ],
+  "historial": {
+   "D-172": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-111": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria CredentialAccess": {
+    "alertas_calificadas": 2385,
+    "TP_%": 26.0,
+    "BP_%": 48.9,
+    "FP_%": 25.1
+   }
+  }
+ }
+}

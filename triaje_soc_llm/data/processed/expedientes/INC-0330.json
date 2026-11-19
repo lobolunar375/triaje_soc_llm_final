@@ -1,0 +1,67 @@
+{
+ "incidente": "INC-0330",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 2,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "DefenseEvasion": 1
+  },
+  "entidades_distintas": {
+   "dispositivos": 1,
+   "nombres_dispositivo": 1,
+   "archivos_hash": 1,
+   "archivos": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-107",
+   "titulo": "T-4434",
+   "categoria": "DefenseEvasion",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-107": {
+    "alertas_calificadas": 275,
+    "TP_%": 52.4,
+    "BP_%": 36.4,
+    "FP_%": 11.3
+   },
+   "T-4434": {
+    "alertas_calificadas": 18,
+    "nota": "historial insuficiente"
+   },
+   "categoria DefenseEvasion": {
+    "alertas_calificadas": 1100,
+    "TP_%": 23.0,
+    "BP_%": 59.5,
+    "FP_%": 17.5
+   }
+  }
+ }
+}

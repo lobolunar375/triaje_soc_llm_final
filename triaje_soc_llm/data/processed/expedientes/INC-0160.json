@@ -1,0 +1,676 @@
+{
+ "incidente": "INC-0160",
+ "resumen": {
+  "alertas": 14,
+  "evidencias": 73,
+  "duracion_min": 558.4,
+  "detectores_distintos": 2,
+  "categorias": {
+   "CommandAndControl": 11,
+   "SuspiciousActivity": 3
+  },
+  "entidades_distintas": {
+   "dispositivos": 12,
+   "direcciones_ip": 5,
+   "cuentas": 12,
+   "cuentas_correo": 12,
+   "cuentas_entra_id": 12,
+   "nombres_cuenta": 12,
+   "nombres_dispositivo": 12,
+   "urls": 5,
+   "archivos_hash": 5,
+   "archivos": 3
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-2",
+   "titulo": "T-2",
+   "categoria": "CommandAndControl",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 145.0,
+   "detector": "D-2",
+   "titulo": "T-2",
+   "categoria": "CommandAndControl",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A2-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A3",
+   "minuto": 210.5,
+   "detector": "D-2",
+   "titulo": "T-2",
+   "categoria": "CommandAndControl",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A3-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A3-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A3-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A3-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A4",
+   "minuto": 301.3,
+   "detector": "D-3",
+   "titulo": "T-148",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A4-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A4-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A4-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A4-E4",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A4-E5",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A5",
+   "minuto": 315.6,
+   "detector": "D-2",
+   "titulo": "T-2",
+   "categoria": "CommandAndControl",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A5-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A5-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A5-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A5-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A6",
+   "minuto": 329.1,
+   "detector": "D-2",
+   "titulo": "T-2",
+   "categoria": "CommandAndControl",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A6-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A6-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A6-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A6-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A7",
+   "minuto": 339.2,
+   "detector": "D-2",
+   "titulo": "T-2",
+   "categoria": "CommandAndControl",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A7-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A7-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A7-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A7-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A8",
+   "minuto": 389.5,
+   "detector": "D-3",
+   "titulo": "T-148",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A8-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A8-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A8-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A8-E4",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A8-E5",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A9",
+   "minuto": 395.4,
+   "detector": "D-3",
+   "titulo": "T-133",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A9-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A9-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A9-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A9-E4",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A9-E5",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A10",
+   "minuto": 428.0,
+   "detector": "D-2",
+   "titulo": "T-2",
+   "categoria": "CommandAndControl",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A10-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A10-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A10-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A10-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A11",
+   "minuto": 432.9,
+   "detector": "D-2",
+   "titulo": "T-2",
+   "categoria": "CommandAndControl",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A11-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A11-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A11-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A11-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A12",
+   "minuto": 438.9,
+   "detector": "D-2",
+   "titulo": "T-2",
+   "categoria": "CommandAndControl",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A12-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A12-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A12-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A12-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A13",
+   "minuto": 546.9,
+   "detector": "D-2",
+   "titulo": "T-2",
+   "categoria": "CommandAndControl",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A13-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A13-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A13-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A13-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  },
+  {
+   "id": "A14",
+   "minuto": 558.4,
+   "detector": "D-2",
+   "titulo": "T-2",
+   "categoria": "CommandAndControl",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A14-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A14-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A14-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A14-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-2": {
+    "alertas_calificadas": 4477,
+    "TP_%": 9.9,
+    "BP_%": 41.1,
+    "FP_%": 49.1
+   },
+   "T-2": {
+    "alertas_calificadas": 4477,
+    "TP_%": 9.9,
+    "BP_%": 41.1,
+    "FP_%": 49.1
+   },
+   "categoria CommandAndControl": {
+    "alertas_calificadas": 4934,
+    "TP_%": 11.9,
+    "BP_%": 43.2,
+    "FP_%": 44.9
+   },
+   "D-3": {
+    "alertas_calificadas": 1378,
+    "TP_%": 14.0,
+    "BP_%": 72.6,
+    "FP_%": 13.4
+   },
+   "T-148": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria SuspiciousActivity": {
+    "alertas_calificadas": 11308,
+    "TP_%": 34.2,
+    "BP_%": 47.7,
+    "FP_%": 18.1
+   },
+   "T-133": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   }
+  }
+ }
+}

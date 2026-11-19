@@ -1,0 +1,14 @@
+{
+  "GUIDE_Test.csv": {
+    "bytes": 1087963831,
+    "sha256": "fdfd7523efd6e3c26bd0290ba6acbcb237196cf923dd56a28e96802035db35a3"
+  },
+  "GUIDE_Test_Queue_Rankings.csv": {
+    "bytes": 136325,
+    "sha256": "e4ea9308f45821128a3cd446ab19e6559edfc50709e72034ce957b6f0e2e65d6"
+  },
+  "GUIDE_Train.csv": {
+    "bytes": 2425409087,
+    "sha256": "3d6c286e1353236b3457a011a20cb9a8cec26a589ab685dab31dad261d47b8c3"
+  }
+}

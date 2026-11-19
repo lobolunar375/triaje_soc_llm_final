@@ -1,0 +1,212 @@
+{
+ "incidente": "INC-0092",
+ "resumen": {
+  "alertas": 6,
+  "evidencias": 18,
+  "duracion_min": 316.4,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Execution": 6
+  },
+  "entidades_distintas": {
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1,
+   "archivos_hash": 6,
+   "archivos": 6,
+   "aplicaciones": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-9",
+   "titulo": "T-266",
+   "categoria": "Execution",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 82.5,
+   "detector": "D-9",
+   "titulo": "T-266",
+   "categoria": "Execution",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A3",
+   "minuto": 130.8,
+   "detector": "D-9",
+   "titulo": "T-266",
+   "categoria": "Execution",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A3-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A3-E2",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A3-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A4",
+   "minuto": 292.4,
+   "detector": "D-9",
+   "titulo": "T-266",
+   "categoria": "Execution",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A4-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A4-E2",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A4-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A5",
+   "minuto": 315.1,
+   "detector": "D-9",
+   "titulo": "T-266",
+   "categoria": "Execution",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A5-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A5-E2",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A5-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A6",
+   "minuto": 316.4,
+   "detector": "D-9",
+   "titulo": "T-266",
+   "categoria": "Execution",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A6-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A6-E2",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A6-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-9": {
+    "alertas_calificadas": 2952,
+    "TP_%": 43.8,
+    "BP_%": 36.0,
+    "FP_%": 20.2
+   },
+   "T-266": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria Execution": {
+    "alertas_calificadas": 4108,
+    "TP_%": 39.3,
+    "BP_%": 38.6,
+    "FP_%": 22.1
+   }
+  }
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "incidente": "INC-0127",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 6,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "SuspiciousActivity": 1
+  },
+  "entidades_distintas": {
+   "dispositivos": 1,
+   "direcciones_ip": 2,
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1,
+   "nombres_dispositivo": 1,
+   "urls": 1,
+   "archivos_hash": 1,
+   "archivos": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-3",
+   "titulo": "T-4",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 2,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E4",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E5",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1,
+     "sospecha": "Suspicious",
+     "veredicto": "Suspicious"
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-3": {
+    "alertas_calificadas": 1378,
+    "TP_%": 14.0,
+    "BP_%": 72.6,
+    "FP_%": 13.4
+   },
+   "T-4": {
+    "alertas_calificadas": 1002,
+    "TP_%": 14.6,
+    "BP_%": 71.4,
+    "FP_%": 14.1
+   },
+   "categoria SuspiciousActivity": {
+    "alertas_calificadas": 11308,
+    "TP_%": 34.2,
+    "BP_%": 47.7,
+    "FP_%": 18.1
+   }
+  }
+ }
+}

@@ -1,0 +1,21 @@
+codigo,cita,archivo,url_pdf,doi_o_pagina,acceso
+R01,"Malach et al., 2025",R01_Malach_2025_ComputersSecurity.pdf,,https://doi.org/10.1016/j.cose.2024.104270,Suscripción (descarga manual)
+R02,"Wang et al., 2024",R02_Wang_2024_ComputersSecurity.pdf,,https://doi.org/10.1016/j.cose.2023.103583,Suscripción (descarga manual)
+R03,"Rieger et al., 2026",R03_Rieger_2026_ESWA.pdf,,https://doi.org/10.1016/j.eswa.2026.133194,Versión de los autores en el repositorio de su universidad (descarga manual)
+R04,"Okafor, 2026",R04_Okafor_2026_MLWA.pdf,,https://doi.org/10.1016/j.mlwa.2026.100984,Abierto (descarga manual desde el enlace)
+R05,"Tariq et al., 2025",R05_Tariq_2025_ESWA.pdf,,https://doi.org/10.1016/j.eswa.2025.127318,Suscripción (descarga manual)
+R06,"Vaarandi & Guerra-Manzanares, 2024",R06_Vaarandi_2024_FGCS.pdf,,https://doi.org/10.1016/j.future.2024.02.001,Suscripción (descarga manual)
+R07,"Mudzakir et al., 2025",R07_Mudzakir_2025_ProcediaCS.pdf,,https://doi.org/10.1016/j.procs.2025.08.299,Abierto (descarga manual desde el enlace)
+R08,"Simões et al., 2026",R08_Simoes_2026_AppliedSciences.pdf,https://www.mdpi.com/2076-3417/16/16/7915/pdf,https://doi.org/10.3390/app16167915,Abierto
+R09,"Baruwal Chhetri et al., 2024",R09_BaruwalChhetri_2024_TOIT.pdf,,https://doi.org/10.1145/3670009,Suscripción (descarga manual)
+R10,"Kazi & Poinkar, 2026",R10_Kazi_2026_IJDS.pdf,,https://doi.org/10.51173/ijds.v3i2.84,Abierto (descarga manual desde el enlace)
+R11,"Ismail et al., 2025",R11_Ismail_2025_Information.pdf,https://www.mdpi.com/2078-2489/16/5/365/pdf,https://doi.org/10.3390/info16050365,Abierto
+R12,"Kumar & Khan, 2026",R12_Kumar_2026_IJSRCSEIT.pdf,,https://doi.org/10.32628/CSEIT261213109,Abierto (descarga manual desde el enlace)
+R13,"Zhong et al., 2019",R13_Zhong_2019_IEEESystemsJournal.pdf,,https://doi.org/10.1109/JSYST.2018.2828832,Suscripción (descarga manual)
+R14,"Wu et al., 2026",R14_Wu_2026_IEEETDSC.pdf,,https://doi.org/10.1109/TDSC.2025.3609834,Suscripción (descarga manual)
+R15,"Schärmer et al., 2026",R15_Scharmer_2026_ARES.pdf,,https://doi.org/10.1007/978-3-032-35579-9_19,Suscripción (descarga manual)
+R16,"Landauer et al., 2022",R16_Landauer_2022_TOPS.pdf,,https://doi.org/10.1145/3510581,Descarga manual desde el enlace
+R17,"Ghadermazi et al., 2024",R17_Ghadermazi_2024_DTRAP.pdf,,https://doi.org/10.1145/3644393,Abierto (descarga manual desde el enlace)
+R18,"Vermeer et al., 2023",R18_Vermeer_2023_CCS.pdf,,https://doi.org/10.1145/3576915.3616581,Abierto (descarga manual desde el enlace)
+R19,"Freitas et al., 2025",R19_Freitas_2025_GUIDE.pdf,https://arxiv.org/pdf/2407.09017,https://www.kaggle.com/datasets/Microsoft/microsoft-security-incident-prediction,Abierto (versión previa en arXiv)
+R20,"Mohammed & Jamali, 2026",R20_Mohammed_2026_InteligenciaArtificial.pdf,,https://journal.iberamia.org/index.php/intartif/article/view/2408,Abierto (descarga manual desde el enlace)

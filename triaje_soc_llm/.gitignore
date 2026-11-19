@@ -1,0 +1,21 @@
+# Datos crudos e intermedios: se descargan de Kaggle (licencia CDLA-Permissive-2.0) y se regeneran con los scripts
+data/raw/
+data/interim/
+# Credenciales: la clave de la API solo se entrega por la variable de entorno LLM_API_KEY
+.env
+*.key
+config/config.local.yaml
+# Entornos y cachés
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+# Archivos temporales de la construcción de los documentos
+docs/herramientas_documentos/_*.docx
+docs/herramientas_documentos/_*.md
+docs/herramientas_documentos/ref*.docx
+# PDF de las referencias (se descargan con fuentes/descargar_fuentes.py)
+fuentes/*.pdf
+fuentes/pendientes_descarga_manual.csv
+# Pruebas del código con el backend simulado (no son resultados)
+tests/salida_simulada/

@@ -1,0 +1,47 @@
+# Configuración única del experimento. Todos los scripts leen este archivo;
+# cambiar un valor aquí cambia el experimento completo de forma reproducible.
+
+semilla: 42
+
+datos:
+  dir_raw: data/raw                 # aquí se descomprime el zip de Kaggle
+  archivo_train: GUIDE_Train.csv    # población del estudio
+  archivo_test: GUIDE_Test.csv      # no se usa en el estudio
+  kaggle_dataset: Microsoft/microsoft-security-incident-prediction
+
+limpieza:
+  max_alertas_incidente: 50         # incidentes con más alertas distintas se excluyen (el expediente detalla solo 25)
+  min_alertas_incidente: 1
+
+muestra:
+  frac_org_desarrollo: 0.20         # 20 % de las organizaciones van a desarrollo y 80 % a evaluación
+  n_desarrollo: 75                  # incidentes de desarrollo, para probar el sistema (20 % de 375)
+  n_evaluacion: 300                 # incidentes para la medición final (80 % de 375)
+  n_c0: 40                          # submuestra reservada para la extensión con triaje manual (no ejecutada en el estudio)
+  n_auditoria: 60                   # submuestra reservada para la extensión con auditoría humana del criterio 4 (no ejecutada)
+
+expediente:
+  max_alertas: 25                   # alertas que se muestran en detalle; el resto se resume en conteos
+  max_evidencias_por_alerta: 6
+  max_tokens_estimados: 4000        # presupuesto aproximado de entrada (≈ 4 caracteres por token)
+
+llm:
+  # Configuración con la que se ejecutó el estudio (5 de noviembre de 2026): GPT-4o mini por la API de OpenAI.
+  # La clave de la API NO se escribe en este archivo: se lee de la variable de entorno LLM_API_KEY.
+  backend: openai                   # openai (cualquier API compatible con OpenAI) | ollama (modelo local) | simulado (solo pruebas)
+  url: https://api.openai.com       # con Ollama: http://localhost:11434
+  modelo: gpt-4o-mini               # con Ollama, por ejemplo: qwen2.5:7b
+  temperatura: 0.2
+  top_p: 1.0
+  max_tokens_salida: 600
+  semillas: [1, 2, 3]               # R = 3 corridas por condición
+  reintentos_esquema: 3             # reintentos si la salida no cumple el esquema JSON
+  umbral_escalamiento: 0.60         # confianza mínima para no escalar a revisión humana
+  timeout_s: 300
+
+estadistica:
+  alfa: 0.05
+  bootstrap_b: 2000
+  delta_mcnemar: 0.10               # diferencia mínima relevante en exactitud
+  psi_mcnemar: 0.25                 # proporción esperada de pares discordantes
+  potencia: 0.80

@@ -1,0 +1,54 @@
+{
+ "incidente": "INC-0115",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 1,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "SuspiciousActivity": 1
+  },
+  "entidades_distintas": {}
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-402",
+   "titulo": "T-282",
+   "categoria": "SuspiciousActivity",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "MailCluster",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-402": {
+    "alertas_calificadas": 151,
+    "TP_%": 2.6,
+    "BP_%": 96.0,
+    "FP_%": 1.3
+   },
+   "T-282": {
+    "alertas_calificadas": 224,
+    "TP_%": 6.7,
+    "BP_%": 91.1,
+    "FP_%": 2.2
+   },
+   "categoria SuspiciousActivity": {
+    "alertas_calificadas": 11308,
+    "TP_%": 34.2,
+    "BP_%": 47.7,
+    "FP_%": 18.1
+   }
+  }
+ }
+}

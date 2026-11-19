@@ -1,0 +1,73 @@
+{
+ "type": "object",
+ "properties": {
+  "resumen": {
+   "type": "string"
+  },
+  "tacticas": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "senales_maliciosas": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "hecho": {
+      "type": "string"
+     },
+     "evidencias": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    },
+    "required": [
+     "hecho",
+     "evidencias"
+    ]
+   }
+  },
+  "senales_benignas": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "hecho": {
+      "type": "string"
+     },
+     "evidencias": {
+      "type": "array",
+      "items": {
+       "type": "string"
+      }
+     }
+    },
+    "required": [
+     "hecho",
+     "evidencias"
+    ]
+   }
+  },
+  "historial_relevante": {
+   "type": "string"
+  },
+  "evidencias_clave": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  }
+ },
+ "required": [
+  "resumen",
+  "tacticas",
+  "senales_maliciosas",
+  "senales_benignas",
+  "historial_relevante",
+  "evidencias_clave"
+ ]
+}

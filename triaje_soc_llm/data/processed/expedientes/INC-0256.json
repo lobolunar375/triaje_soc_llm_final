@@ -1,0 +1,66 @@
+{
+ "incidente": "INC-0256",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 1,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "CommandAndControl": 1
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-6650",
+   "titulo": "T-112977",
+   "categoria": "CommandAndControl",
+   "tecnicas": [
+    "T1008",
+    "T1568"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1008",
+    "nombre": "Fallback Channels",
+    "tacticas": "command-and-control"
+   },
+   {
+    "tecnica": "T1568",
+    "nombre": "Dynamic Resolution",
+    "tacticas": "command-and-control"
+   }
+  ],
+  "historial": {
+   "D-6650": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-112977": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria CommandAndControl": {
+    "alertas_calificadas": 4934,
+    "TP_%": 11.9,
+    "BP_%": 43.2,
+    "FP_%": 44.9
+   }
+  }
+ }
+}

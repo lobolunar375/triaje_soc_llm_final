@@ -1,0 +1,58 @@
+# Decisión sobre cada columna de GUIDE. El paso 02 aplica esta tabla y verifica con los datos los
+# supuestos de cada justificación (nulos, tipo de valor, asociación con la etiqueta); si un supuesto
+# no se cumple, lo informa en el reporte de limpieza.
+#
+# rol:
+#   clave      -> se conserva para agrupar evidencias en alertas e incidentes o para la partición
+#   entrada    -> se conserva y llega al expediente que leen los agentes y el analista
+#   historial  -> se conserva solo para calcular la base de conocimiento histórica (estadísticas por código)
+#   conteo     -> no llega como valor; se resume como número de entidades distintas por incidente
+#   etiqueta   -> verdad terreno; solo se usa para calcular métricas
+#   eliminada  -> se descarta
+
+Id:                {rol: eliminada, motivo: "Identificador técnico de la fila OrgId-IncidentId; no aporta información para el triaje."}
+OrgId:             {rol: clave,     motivo: "Define la organización; se usa para la partición desarrollo/evaluación y no se muestra a los agentes."}
+IncidentId:        {rol: clave,     motivo: "Agrupa las alertas en el incidente, que es la unidad de análisis."}
+AlertId:           {rol: clave,     motivo: "Agrupa las evidencias en alertas y sirve de identificador citable de evidencia."}
+Timestamp:         {rol: entrada,   motivo: "Permite calcular la duración del incidente y ordenar las alertas; GUIDE añade ruido a las marcas de tiempo, por lo que solo se usan diferencias relativas."}
+DetectorId:        {rol: historial, motivo: "Código seudonimizado del detector; sin significado para un LLM, pero su historial de calificaciones en las organizaciones de desarrollo es la señal que usa un analista experimentado."}
+AlertTitle:        {rol: historial, motivo: "Título seudonimizado como código numérico; se usa igual que DetectorId."}
+Category:          {rol: entrada,   motivo: "Categoría de la alerta en texto (p. ej., InitialAccess); interpretable y asociada a la táctica de ATT&CK."}
+MitreTechniques:   {rol: entrada,   motivo: "Técnicas de MITRE ATT&CK en texto; se traducen a nombre y táctica con la base oficial de ATT&CK."}
+IncidentGrade:     {rol: etiqueta,  motivo: "Calificación del analista del cliente (TP, BP, FP); nunca se muestra a los agentes."}
+ActionGrouped:     {rol: eliminada, motivo: "Acción de remediación registrada después del triaje; filtraría la etiqueta y casi siempre está vacía."}
+ActionGranular:    {rol: eliminada, motivo: "Igual que ActionGrouped, con mayor detalle; fuga de la etiqueta."}
+EntityType:        {rol: entrada,   motivo: "Tipo de entidad de la evidencia en texto (Ip, User, File, ...); interpretable."}
+EvidenceRole:      {rol: entrada,   motivo: "Rol de la evidencia en la alerta (Impacted o Related); interpretable."}
+DeviceId:          {rol: conteo,    motivo: "Identificador seudonimizado; solo se cuenta cuántos dispositivos distintos involucra el incidente."}
+Sha256:            {rol: conteo,    motivo: "Hash seudonimizado de archivo; se resume como conteo."}
+IpAddress:         {rol: conteo,    motivo: "Dirección IP seudonimizada; se resume como conteo."}
+Url:               {rol: conteo,    motivo: "URL seudonimizada; se resume como conteo."}
+AccountSid:        {rol: conteo,    motivo: "Cuenta seudonimizada; se resume como conteo."}
+AccountUpn:        {rol: conteo,    motivo: "Cuenta de correo seudonimizada; se resume como conteo."}
+AccountObjectId:   {rol: conteo,    motivo: "Cuenta de Entra ID seudonimizada; se resume como conteo."}
+AccountName:       {rol: conteo,    motivo: "Nombre de cuenta seudonimizado; se resume como conteo."}
+DeviceName:        {rol: conteo,    motivo: "Nombre de dispositivo seudonimizado; se resume como conteo."}
+NetworkMessageId:  {rol: conteo,    motivo: "Identificador de mensaje de correo seudonimizado; se resume como conteo."}
+EmailClusterId:    {rol: eliminada, motivo: "Casi siempre vacío y seudonimizado."}
+RegistryKey:       {rol: conteo,    motivo: "Clave de registro seudonimizada; se resume como conteo."}
+RegistryValueName: {rol: eliminada, motivo: "Seudonimizado y redundante con RegistryKey."}
+RegistryValueData: {rol: eliminada, motivo: "Seudonimizado y redundante con RegistryKey."}
+ApplicationId:     {rol: conteo,    motivo: "Aplicación seudonimizada; se resume como conteo."}
+ApplicationName:   {rol: eliminada, motivo: "Seudonimizado y redundante con ApplicationId."}
+OAuthApplicationId: {rol: eliminada, motivo: "Casi siempre vacío y seudonimizado."}
+ThreatFamily:      {rol: eliminada, motivo: "Familia de malware en texto, pero vacía en el 99 % de las evidencias; no permite comparar incidentes."}
+FileName:          {rol: conteo,    motivo: "Nombre de archivo seudonimizado; se resume como conteo."}
+FolderPath:        {rol: eliminada, motivo: "Seudonimizado y redundante con FileName."}
+ResourceIdName:    {rol: eliminada, motivo: "Recurso de Azure seudonimizado; casi siempre vacío."}
+ResourceType:      {rol: eliminada, motivo: "Casi siempre vacío."}
+Roles:             {rol: eliminada, motivo: "Metadato adicional del rol de la evidencia; casi siempre vacío."}
+OSFamily:          {rol: eliminada, motivo: "Código seudonimizado del sistema operativo; sin significado para un LLM."}
+OSVersion:         {rol: eliminada, motivo: "Código seudonimizado de la versión del sistema operativo."}
+AntispamDirection: {rol: eliminada, motivo: "Casi siempre vacío."}
+SuspicionLevel:    {rol: entrada,   motivo: "Nivel de sospecha de la evidencia en texto; interpretable."}
+LastVerdict:       {rol: entrada,   motivo: "Veredicto del análisis automático en texto (no del analista); interpretable. Su asociación con la etiqueta es débil (V = 0,13), por lo que no filtra la etiqueta."}
+CountryCode:       {rol: eliminada, motivo: "Ubicación seudonimizada; sin significado y con riesgo de reidentificación."}
+State:             {rol: eliminada, motivo: "Ubicación seudonimizada."}
+City:              {rol: eliminada, motivo: "Ubicación seudonimizada."}
+Usage:             {rol: eliminada, motivo: "Solo existe en el archivo de prueba (Public/Private de Kaggle)."}

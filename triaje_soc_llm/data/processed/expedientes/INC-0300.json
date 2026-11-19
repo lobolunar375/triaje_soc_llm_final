@@ -1,0 +1,60 @@
+{
+ "incidente": "INC-0300",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 2,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Impact": 1
+  },
+  "entidades_distintas": {
+   "nombres_dispositivo": 2
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-416",
+   "titulo": "T-442",
+   "categoria": "Impact",
+   "tecnicas": [
+    "T1531"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 2
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1531",
+    "nombre": "Account Access Removal",
+    "tacticas": "impact"
+   }
+  ],
+  "historial": {
+   "D-416": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-442": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria Impact": {
+    "alertas_calificadas": 610,
+    "TP_%": 14.1,
+    "BP_%": 83.0,
+    "FP_%": 3.0
+   }
+  }
+ }
+}

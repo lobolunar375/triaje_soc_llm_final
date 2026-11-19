@@ -1,0 +1,172 @@
+{
+  "embudo": [
+    {
+      "etapa": "0. Archivo original",
+      "evidencias": 9516837,
+      "incidentes": 730778
+    },
+    {
+      "etapa": "1. Sin duplicados exactos",
+      "evidencias": 9494278,
+      "incidentes": 730778
+    },
+    {
+      "etapa": "2. Marca de tiempo válida",
+      "evidencias": 9494278,
+      "incidentes": 730778
+    },
+    {
+      "etapa": "3. Con una sola calificación de triaje",
+      "evidencias": 9442956,
+      "incidentes": 707108
+    },
+    {
+      "etapa": "4. Con a lo sumo 50 alertas",
+      "evidencias": 6707032,
+      "incidentes": 705908
+    }
+  ],
+  "duplicados": 22559,
+  "centinelas": {
+    "DeviceId": {
+      "valor": "98799",
+      "pct_filas": 96.19
+    },
+    "Sha256": {
+      "valor": "138268",
+      "pct_filas": 92.29
+    },
+    "IpAddress": {
+      "valor": "360606",
+      "pct_filas": 77.13
+    },
+    "Url": {
+      "valor": "160396",
+      "pct_filas": 92.81
+    },
+    "AccountSid": {
+      "valor": "441377",
+      "pct_filas": 76.32
+    },
+    "AccountUpn": {
+      "valor": "673934",
+      "pct_filas": 63.58
+    },
+    "AccountObjectId": {
+      "valor": "425863",
+      "pct_filas": 76.57
+    },
+    "AccountName": {
+      "valor": "453297",
+      "pct_filas": 75.14
+    },
+    "DeviceName": {
+      "valor": "153085",
+      "pct_filas": 92.67
+    },
+    "NetworkMessageId": {
+      "valor": "529644",
+      "pct_filas": 87.79
+    },
+    "RegistryKey": {
+      "valor": "1631",
+      "pct_filas": 99.82
+    },
+    "ApplicationId": {
+      "valor": "2251",
+      "pct_filas": 97.76
+    },
+    "FileName": {
+      "valor": "289573",
+      "pct_filas": 89.18
+    }
+  },
+  "timestamps_invalidos": 0,
+  "rango_temporal": [
+    "2023-11-20 16:32:22",
+    "2024-06-17 14:45:38"
+  ],
+  "incidentes_sin_calificacion": 23670,
+  "incidentes_calificacion_multiple": 0,
+  "incidentes_excluidos_tamano": 1200,
+  "clases_excluidos_tamano": {
+    "TruePositive": 536,
+    "BenignPositive": 419,
+    "FalsePositive": 245
+  },
+  "umbral_alertas": 50,
+  "poblacion_elegible": {
+    "incidentes": 705908,
+    "organizaciones": 5339,
+    "clases": {
+      "BenignPositive": 346179,
+      "FalsePositive": 214679,
+      "TruePositive": 145050
+    },
+    "clases_pct": {
+      "BenignPositive": 49.04,
+      "FalsePositive": 30.41,
+      "TruePositive": 20.55
+    }
+  },
+  "columnas_por_rol": {
+    "clave": [
+      "OrgId",
+      "IncidentId",
+      "AlertId"
+    ],
+    "conteo": [
+      "DeviceId",
+      "Sha256",
+      "IpAddress",
+      "Url",
+      "AccountSid",
+      "AccountUpn",
+      "AccountObjectId",
+      "AccountName",
+      "DeviceName",
+      "NetworkMessageId",
+      "RegistryKey",
+      "ApplicationId",
+      "FileName"
+    ],
+    "eliminada": [
+      "Id",
+      "ActionGrouped",
+      "ActionGranular",
+      "EmailClusterId",
+      "RegistryValueName",
+      "RegistryValueData",
+      "ApplicationName",
+      "OAuthApplicationId",
+      "ThreatFamily",
+      "FolderPath",
+      "ResourceIdName",
+      "ResourceType",
+      "Roles",
+      "OSFamily",
+      "OSVersion",
+      "AntispamDirection",
+      "CountryCode",
+      "State",
+      "City"
+    ],
+    "entrada": [
+      "Timestamp",
+      "Category",
+      "MitreTechniques",
+      "EntityType",
+      "EvidenceRole",
+      "SuspicionLevel",
+      "LastVerdict"
+    ],
+    "etiqueta": [
+      "IncidentGrade"
+    ],
+    "historial": [
+      "DetectorId",
+      "AlertTitle"
+    ]
+  },
+  "avisos": []
+}

@@ -1,0 +1,74 @@
+{
+ "incidente": "INC-0282",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 4,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "CredentialAccess": 1
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 1,
+   "nombres_cuenta": 1,
+   "nombres_dispositivo": 2
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-192",
+   "titulo": "T-162",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1110"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 2
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1110",
+    "nombre": "Brute Force",
+    "tacticas": "credential-access"
+   }
+  ],
+  "historial": {
+   "D-192": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-162": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria CredentialAccess": {
+    "alertas_calificadas": 2385,
+    "TP_%": 26.0,
+    "BP_%": 48.9,
+    "FP_%": 25.1
+   }
+  }
+ }
+}

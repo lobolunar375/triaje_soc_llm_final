@@ -1,0 +1,86 @@
+{
+ "incidente": "INC-0060",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 8,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "CredentialAccess": 1
+  },
+  "entidades_distintas": {
+   "cuentas": 3,
+   "cuentas_correo": 3,
+   "cuentas_entra_id": 3,
+   "nombres_cuenta": 3,
+   "nombres_dispositivo": 4
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-91",
+   "titulo": "T-68",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1110",
+    "T1110.001",
+    "T1110.003"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 5
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "User",
+     "rol": "Related",
+     "n": 3
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1110",
+    "nombre": "Brute Force",
+    "tacticas": "credential-access"
+   },
+   {
+    "tecnica": "T1110.001",
+    "nombre": "Password Guessing",
+    "tacticas": "credential-access"
+   },
+   {
+    "tecnica": "T1110.003",
+    "nombre": "Password Spraying",
+    "tacticas": "credential-access"
+   }
+  ],
+  "historial": {
+   "D-91": {
+    "alertas_calificadas": 27,
+    "TP_%": 11.1,
+    "BP_%": 25.9,
+    "FP_%": 63.0
+   },
+   "T-68": {
+    "alertas_calificadas": 27,
+    "TP_%": 11.1,
+    "BP_%": 25.9,
+    "FP_%": 63.0
+   },
+   "categoria CredentialAccess": {
+    "alertas_calificadas": 2385,
+    "TP_%": 26.0,
+    "BP_%": 48.9,
+    "FP_%": 25.1
+   }
+  }
+ }
+}

@@ -1,0 +1,46 @@
+columna,rol,motivo,pct_nulos,tipo_valor,distintos_aprox,v_cramer_etiqueta,centinela,pct_centinela
+Id,eliminada,Identificador técnico de la fila OrgId-IncidentId; no aporta información para el triaje.,0.0,código numérico,792444,,,
+OrgId,clave,Define la organización; se usa para la partición desarrollo/evaluación y no se muestra a los agentes.,0.0,código numérico,6002,0.667,,
+IncidentId,clave,"Agrupa las alertas en el incidente, que es la unidad de análisis.",0.0,código numérico,474664,0.238,,
+AlertId,clave,Agrupa las evidencias en alertas y sirve de identificador citable de evidencia.,0.0,código numérico,1297171,0.09,,
+Timestamp,entrada,"Permite calcular la duración del incidente y ordenar las alertas; GUIDE añade ruido a las marcas de tiempo, por lo que solo se usan diferencias relativas.",0.0,texto,761241,0.094,,
+DetectorId,historial,"Código seudonimizado del detector; sin significado para un LLM, pero su historial de calificaciones en las organizaciones de desarrollo es la señal que usa un analista experimentado.",0.0,código numérico,8918,0.571,,
+AlertTitle,historial,Título seudonimizado como código numérico; se usa igual que DetectorId.,0.0,código numérico,88964,0.524,,
+Category,entrada,"Categoría de la alerta en texto (p. ej., InitialAccess); interpretable y asociada a la táctica de ATT&CK.",0.0,texto,20,0.307,,
+MitreTechniques,entrada,Técnicas de MITRE ATT&CK en texto; se traducen a nombre y táctica con la base oficial de ATT&CK.,57.46,texto,1135,0.364,,
+IncidentGrade,etiqueta,"Calificación del analista del cliente (TP, BP, FP); nunca se muestra a los agentes.",0.54,texto,3,,,
+ActionGrouped,eliminada,Acción de remediación registrada después del triaje; filtraría la etiqueta y casi siempre está vacía.,99.41,texto,3,0.007,,
+ActionGranular,eliminada,"Igual que ActionGrouped, con mayor detalle; fuga de la etiqueta.",99.41,texto,16,0.008,,
+EntityType,entrada,"Tipo de entidad de la evidencia en texto (Ip, User, File, ...); interpretable.",0.0,texto,33,0.308,,
+EvidenceRole,entrada,Rol de la evidencia en la alerta (Impacted o Related); interpretable.,0.0,texto,2,0.161,,
+DeviceId,conteo,Identificador seudonimizado; solo se cuenta cuántos dispositivos distintos involucra el incidente.,0.0,código numérico,77017,0.083,98799,96.19
+Sha256,conteo,Hash seudonimizado de archivo; se resume como conteo.,0.0,código numérico,110970,0.133,138268,92.29
+IpAddress,conteo,Dirección IP seudonimizada; se resume como conteo.,0.0,código numérico,287410,0.156,360606,77.13
+Url,conteo,URL seudonimizada; se resume como conteo.,0.0,código numérico,126488,0.095,160396,92.81
+AccountSid,conteo,Cuenta seudonimizada; se resume como conteo.,0.0,código numérico,359368,0.116,441377,76.32
+AccountUpn,conteo,Cuenta de correo seudonimizada; se resume como conteo.,0.0,código numérico,547828,0.135,673934,63.58
+AccountObjectId,conteo,Cuenta de Entra ID seudonimizada; se resume como conteo.,0.0,código numérico,340518,0.114,425863,76.57
+AccountName,conteo,Nombre de cuenta seudonimizado; se resume como conteo.,0.0,código numérico,378437,0.111,453297,75.14
+DeviceName,conteo,Nombre de dispositivo seudonimizado; se resume como conteo.,0.0,código numérico,114843,0.122,153085,92.67
+NetworkMessageId,conteo,Identificador de mensaje de correo seudonimizado; se resume como conteo.,0.0,código numérico,359984,0.137,529644,87.79
+EmailClusterId,eliminada,Casi siempre vacío y seudonimizado.,98.98,código numérico,26184,0.034,,
+RegistryKey,conteo,Clave de registro seudonimizada; se resume como conteo.,0.0,código numérico,1335,0.049,1631,99.82
+RegistryValueName,eliminada,Seudonimizado y redundante con RegistryKey.,0.0,código numérico,525,0.014,,
+RegistryValueData,eliminada,Seudonimizado y redundante con RegistryKey.,0.0,código numérico,711,0.016,,
+ApplicationId,conteo,Aplicación seudonimizada; se resume como conteo.,0.0,código numérico,1770,0.073,2251,97.76
+ApplicationName,eliminada,Seudonimizado y redundante con ApplicationId.,0.0,código numérico,2657,0.074,,
+OAuthApplicationId,eliminada,Casi siempre vacío y seudonimizado.,0.0,código numérico,691,0.008,,
+ThreatFamily,eliminada,"Familia de malware en texto, pero vacía en el 99 % de las evidencias; no permite comparar incidentes.",99.21,texto,1671,0.044,,
+FileName,conteo,Nombre de archivo seudonimizado; se resume como conteo.,0.0,código numérico,219616,0.15,289573,89.18
+FolderPath,eliminada,Seudonimizado y redundante con FileName.,0.0,código numérico,90157,0.143,,
+ResourceIdName,eliminada,Recurso de Azure seudonimizado; casi siempre vacío.,0.0,código numérico,2339,0.021,,
+ResourceType,eliminada,Casi siempre vacío.,99.93,texto,25,0.015,,
+Roles,eliminada,Metadato adicional del rol de la evidencia; casi siempre vacío.,97.71,texto,10,0.05,,
+OSFamily,eliminada,Código seudonimizado del sistema operativo; sin significado para un LLM.,0.0,código numérico,6,0.047,,
+OSVersion,eliminada,Código seudonimizado de la versión del sistema operativo.,0.0,código numérico,59,0.047,,
+AntispamDirection,eliminada,Casi siempre vacío.,98.14,texto,5,0.025,,
+SuspicionLevel,entrada,Nivel de sospecha de la evidencia en texto; interpretable.,84.83,texto,2,0.118,,
+LastVerdict,entrada,"Veredicto del análisis automático en texto (no del analista); interpretable. Su asociación con la etiqueta es débil (V = 0,13), por lo que no filtra la etiqueta.",76.52,texto,5,0.132,,
+CountryCode,eliminada,Ubicación seudonimizada; sin significado y con riesgo de reidentificación.,0.0,código numérico,241,0.224,,
+State,eliminada,Ubicación seudonimizada.,0.0,código numérico,1334,0.21,,
+City,eliminada,Ubicación seudonimizada.,0.0,código numérico,9962,0.213,,

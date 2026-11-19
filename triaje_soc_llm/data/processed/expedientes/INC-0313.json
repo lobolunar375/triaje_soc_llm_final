@@ -1,0 +1,76 @@
+{
+ "incidente": "INC-0313",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 15,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Impact": 1
+  },
+  "entidades_distintas": {
+   "dispositivos": 5,
+   "cuentas": 4,
+   "cuentas_correo": 4,
+   "cuentas_entra_id": 4,
+   "nombres_cuenta": 4,
+   "nombres_dispositivo": 5,
+   "urls": 5
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-131",
+   "titulo": "T-113",
+   "categoria": "Impact",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 5
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 5
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 4
+    },
+    {
+     "id": "A1-E4",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-131": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-113": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria Impact": {
+    "alertas_calificadas": 610,
+    "TP_%": 14.1,
+    "BP_%": 83.0,
+    "FP_%": 3.0
+   }
+  }
+ }
+}

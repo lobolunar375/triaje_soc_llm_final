@@ -1,0 +1,97 @@
+{
+ "incidente": "INC-0331",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 5,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Execution": 1
+  },
+  "entidades_distintas": {
+   "dispositivos": 1,
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1,
+   "nombres_dispositivo": 1,
+   "archivos_hash": 2,
+   "archivos": 2
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-39",
+   "titulo": "T-26",
+   "categoria": "Execution",
+   "tecnicas": [
+    "T1059.005",
+    "T1106",
+    "T1559"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "File",
+     "rol": "Related",
+     "n": 2
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "Process",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E4",
+     "tipo": "User",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1059.005",
+    "nombre": "Visual Basic",
+    "tacticas": "execution"
+   },
+   {
+    "tecnica": "T1106",
+    "nombre": "Native API",
+    "tacticas": "execution"
+   },
+   {
+    "tecnica": "T1559",
+    "nombre": "Inter-Process Communication",
+    "tacticas": "execution"
+   }
+  ],
+  "historial": {
+   "D-39": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-26": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria Execution": {
+    "alertas_calificadas": 4108,
+    "TP_%": 39.3,
+    "BP_%": 38.6,
+    "FP_%": 22.1
+   }
+  }
+ }
+}

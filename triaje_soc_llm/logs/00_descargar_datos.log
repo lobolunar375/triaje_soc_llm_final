@@ -1,0 +1,20 @@
+====================================================================================================
+00_descargar_datos  |  inicio 2026-11-02 20:26:05
+====================================================================================================
+
+[PASO 1] Buscar los CSV o un zip ya descargado en data/raw
+  Por qué: Evita descargar 538 MB cada vez que se reproduce el experimento.
+
+[PASO 2] Descomprimir guide_kaggle.zip
+  Por qué: Los scripts leen los CSV directamente con DuckDB, sin cargarlos completos en memoria.
+  GUIDE_Test.csv: 1.09 GB
+  GUIDE_Test_Queue_Rankings.csv: 0.00 GB
+  GUIDE_Train.csv: 2.43 GB
+
+[PASO 3] Calcular SHA-256 de cada archivo
+  Por qué: Permite verificar que una réplica usa exactamente los mismos datos.
+  GUIDE_Test.csv: 1,087,963,831 bytes  sha256=fdfd7523efd6e3c2...
+  GUIDE_Test_Queue_Rankings.csv: 136,325 bytes  sha256=e4ea9308f4582112...
+  GUIDE_Train.csv: 2,425,409,087 bytes  sha256=3d6c286e1353236b...
+
+Fin de 00_descargar_datos: 12.7 s

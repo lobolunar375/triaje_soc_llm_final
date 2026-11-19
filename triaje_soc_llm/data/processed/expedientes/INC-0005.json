@@ -1,0 +1,166 @@
+{
+ "incidente": "INC-0005",
+ "resumen": {
+  "alertas": 3,
+  "evidencias": 12,
+  "duracion_min": 335.6,
+  "detectores_distintos": 1,
+  "categorias": {
+   "InitialAccess": 3
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 1,
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-0",
+   "titulo": "T-0",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1078",
+    "T1078.004"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "CloudLogonSession",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 304.9,
+   "detector": "D-0",
+   "titulo": "T-0",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1078",
+    "T1078.004"
+   ],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "CloudLogonSession",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A3",
+   "minuto": 335.6,
+   "detector": "D-0",
+   "titulo": "T-0",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1078",
+    "T1078.004"
+   ],
+   "evidencias": [
+    {
+     "id": "A3-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A3-E2",
+     "tipo": "CloudLogonSession",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A3-E3",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A3-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1078",
+    "nombre": "Valid Accounts",
+    "tacticas": "stealth;persistence;privilege-escalation;initial-access"
+   },
+   {
+    "tecnica": "T1078.004",
+    "nombre": "Cloud Accounts",
+    "tacticas": "stealth;persistence;privilege-escalation;initial-access"
+   }
+  ],
+  "historial": {
+   "D-0": {
+    "alertas_calificadas": 7682,
+    "TP_%": 12.3,
+    "BP_%": 13.6,
+    "FP_%": 74.1
+   },
+   "T-0": {
+    "alertas_calificadas": 7682,
+    "TP_%": 12.3,
+    "BP_%": 13.6,
+    "FP_%": 74.1
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   }
+  }
+ }
+}

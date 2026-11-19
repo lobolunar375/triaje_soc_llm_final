@@ -1,0 +1,72 @@
+{
+ "incidente": "INC-0233",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 1,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "CommandAndControl": 1
+  },
+  "entidades_distintas": {
+   "urls": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-128",
+   "titulo": "T-108586",
+   "categoria": "CommandAndControl",
+   "tecnicas": [
+    "T1008",
+    "T1568",
+    "T1573"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1008",
+    "nombre": "Fallback Channels",
+    "tacticas": "command-and-control"
+   },
+   {
+    "tecnica": "T1568",
+    "nombre": "Dynamic Resolution",
+    "tacticas": "command-and-control"
+   },
+   {
+    "tecnica": "T1573",
+    "nombre": "Encrypted Channel",
+    "tacticas": "command-and-control"
+   }
+  ],
+  "historial": {
+   "D-128": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-108586": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria CommandAndControl": {
+    "alertas_calificadas": 4934,
+    "TP_%": 11.9,
+    "BP_%": 43.2,
+    "FP_%": 44.9
+   }
+  }
+ }
+}

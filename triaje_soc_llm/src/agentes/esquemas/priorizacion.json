@@ -1,0 +1,25 @@
+{
+ "type": "object",
+ "properties": {
+  "prioridad": {
+   "type": "string",
+   "enum": [
+    "P1",
+    "P2",
+    "P3",
+    "P4"
+   ]
+  },
+  "escalar": {
+   "type": "boolean"
+  },
+  "motivo": {
+   "type": "string"
+  }
+ },
+ "required": [
+  "prioridad",
+  "escalar",
+  "motivo"
+ ]
+}

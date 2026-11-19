@@ -1,0 +1,8 @@
+====================================================================================================
+05_triaje_llm_desarrollo  |  inicio 2026-11-05 14:49:42
+====================================================================================================
+  Backend: openai  Modelo: gpt-4o-mini  Huella de configuración: 07c6ce608479
+
+[PASO 1] Ejecutar 30 triajes (5 incidentes × 2 condiciones × 3 corridas)
+  Por qué: Ya hechos: 0. Las condiciones se intercalan por incidente en orden aleatorio.
+  10/30  INC-0001 C1 s1: FP en 3.2 s

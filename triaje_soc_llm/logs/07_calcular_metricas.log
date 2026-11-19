@@ -1,0 +1,55 @@
+====================================================================================================
+07_calcular_metricas  |  inicio 2026-11-15 23:41:43
+====================================================================================================
+
+[PASO 1] Construir el registro de observación (una fila por incidente, condición y corrida)
+  Por qué: Es el instrumento de recolección; todos los indicadores se calculan a partir de él.
+  Filas: 1800. Por condición: {'C1': 900, 'C2': 900}
+  Corridas no procesadas por condición: {'C1': 0, 'C2': 64}
+  Modelo: ['gpt-4o-mini']. Huella de configuración: ['07c6ce608479']. Fechas: 2026-11-05 14:51:40 a 2026-11-05 18:02:14
+
+[PASO 2] Agregar las corridas por incidente
+  Por qué: Moda para la clase, mayoría para los indicadores binarios y mediana para el tiempo.
+
+[PASO 3] Indicadores de la VD por condición
+  Por qué: PC, F1 macro, TOA, ET, TH y TD, con su nivel según la matriz de operacionalización.
+      condicion    conjunto    n   PC_% nivel_PC  F1_macro_%  TOA_%  ET_media_s nivel_ET  TH_inc_h    TD_% nivel_TD
+    0        C1  evaluacion  300  34.67     Bajo       31.86  86.67       2.846     Alto    1265.0  100.00     Alto
+    1        C2  evaluacion  300  42.33     Bajo       38.79  82.67       9.057     Alto     397.5   94.33     Alto
+
+[PASO 4] Indicadores de la VI por condición automática
+  Por qué: SV, EV, AC, TR, RI, TH y TK, según la matriz de la VI. Los promedios usan las corridas procesadas.
+                                  0       1
+    condicion                    C1      C2
+    corridas                    900     900
+    corridas_procesadas         900     836
+    no_procesadas_%             0.0    7.11
+    SV_registrada_%           100.0   99.76
+    SV_reconstruida_%         100.0   90.98
+    EV_%                      100.0   100.0
+    AC_%                      81.33   60.67
+    TR_media_s                 2.91    9.22
+    TR_mediana_s                2.8     9.0
+    TR_de_s                    0.66    1.83
+    RI                          0.0  0.0072
+    TH_inc_h                 1236.8   390.4
+    TK                       1419.0  4143.0
+    TK_entrada               1277.0  3682.0
+    TK_salida                 142.0   462.0
+    llamadas                    1.0   3.014
+    escalados_%                58.0   44.67
+    correcciones_concluidas       0       6
+    correcciones_fallidas         0      64
+    AUC_prioridad_TP           0.51   0.592
+
+[PASO 5] Indicadores por corrida
+  Por qué: Muestra la variabilidad entre corridas del modelo.
+      condicion  corrida   PC_%  F1_macro_%  TOA_%  ET_media_s    TD_%
+    0        C1        1  36.00       33.19  85.33       2.666  100.00
+    1        C1        2  34.33       31.60  86.67       2.900   99.67
+    2        C1        3  36.00       32.74  88.00       3.166   99.67
+    3        C2        1  40.33       37.18  81.33       8.510   93.00
+    4        C2        2  39.67       36.57  85.33       9.096   92.33
+    5        C2        3  43.67       41.78  76.00      10.066   91.33
+
+Fin de 07_calcular_metricas: 1.0 s

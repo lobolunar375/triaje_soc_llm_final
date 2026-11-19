@@ -1,0 +1,77 @@
+{
+ "incidente": "INC-0002",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 3,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "CredentialAccess": 1
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 1,
+   "aplicaciones": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-182",
+   "titulo": "T-153",
+   "categoria": "CredentialAccess",
+   "tecnicas": [
+    "T1528"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "CloudApplication",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "OAuthApplication",
+     "rol": "Related",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1528",
+    "nombre": "Steal Application Access Token",
+    "tacticas": "credential-access"
+   }
+  ],
+  "historial": {
+   "D-182": {
+    "alertas_calificadas": 214,
+    "TP_%": 19.6,
+    "BP_%": 38.8,
+    "FP_%": 41.6
+   },
+   "T-153": {
+    "alertas_calificadas": 214,
+    "TP_%": 19.6,
+    "BP_%": 38.8,
+    "FP_%": 41.6
+   },
+   "categoria CredentialAccess": {
+    "alertas_calificadas": 2385,
+    "TP_%": 26.0,
+    "BP_%": 48.9,
+    "FP_%": 25.1
+   }
+  }
+ }
+}

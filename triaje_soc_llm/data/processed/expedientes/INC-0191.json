@@ -1,0 +1,77 @@
+{
+ "incidente": "INC-0191",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 9,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Exfiltration": 1
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 2,
+   "cuentas": 2,
+   "cuentas_correo": 2,
+   "cuentas_entra_id": 2,
+   "nombres_cuenta": 2,
+   "nombres_dispositivo": 2,
+   "archivos_hash": 3,
+   "archivos": 3
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-69",
+   "titulo": "T-25332",
+   "categoria": "Exfiltration",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "File",
+     "rol": "Impacted",
+     "n": 3
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 2
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 2
+    },
+    {
+     "id": "A1-E4",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 2
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-69": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-25332": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "categoria Exfiltration": {
+    "alertas_calificadas": 11961,
+    "TP_%": 2.5,
+    "BP_%": 80.7,
+    "FP_%": 16.8
+   }
+  }
+ }
+}

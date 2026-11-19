@@ -1,0 +1,139 @@
+{
+ "incidente": "INC-0368",
+ "resumen": {
+  "alertas": 2,
+  "evidencias": 15,
+  "duracion_min": 319.2,
+  "detectores_distintos": 2,
+  "categorias": {
+   "InitialAccess": 2
+  },
+  "entidades_distintas": {
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1,
+   "urls": 1,
+   "mensajes_correo": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-1",
+   "titulo": "T-1",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1566.002"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "MailCluster",
+     "rol": "Related",
+     "n": 2,
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "MailCluster",
+     "rol": "Related",
+     "n": 1,
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E4",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1,
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A1-E5",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1,
+     "veredicto": "NoThreatsFound"
+    },
+    {
+     "id": "A1-E6",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 319.2,
+   "detector": "D-1781",
+   "titulo": "T-4073",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1566.002",
+    "nombre": "Spearphishing Link",
+    "tacticas": "initial-access"
+   }
+  ],
+  "historial": {
+   "D-1": {
+    "alertas_calificadas": 5747,
+    "TP_%": 48.4,
+    "BP_%": 37.4,
+    "FP_%": 14.2
+   },
+   "T-1": {
+    "alertas_calificadas": 5747,
+    "TP_%": 48.4,
+    "BP_%": 37.4,
+    "FP_%": 14.2
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   },
+   "D-1781": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-4073": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   }
+  }
+ }
+}

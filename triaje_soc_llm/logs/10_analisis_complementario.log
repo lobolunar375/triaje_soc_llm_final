@@ -1,0 +1,51 @@
+====================================================================================================
+10_analisis_complementario  |  inicio 2026-11-15 23:42:18
+====================================================================================================
+
+[PASO 1] Referencias sin LLM frente a C1 y C2
+  Por qué: Sitúa los resultados: una mejora sobre el control no implica superar una regla simple.
+                        exactitud_% F1_macro_%   R_TP   R_BP   R_FP  TOA_%
+    condicion                                                             
+    Siempre BP                50.33      22.32    0.0    1.0    0.0  100.0
+    Regla del historial        50.0      47.69    0.4  0.556  0.486   60.0
+    C1 (un solo LLM)          34.67      31.86  0.133  0.338  0.581  86.67
+    C2 (multiagente)          42.33      38.79  0.173   0.53  0.459  82.67
+  C1 (un solo LLM) vs Regla del historial: {'b': 25, 'c': 71, 'p': 2.6679545936247906e-06}
+  C1 (un solo LLM) vs Siempre BP: {'b': 53, 'c': 100, 'p': 0.00014485686402395095}
+  C2 (multiagente) vs Regla del historial: {'b': 17, 'c': 40, 'p': 0.002315806909890594}
+  C2 (multiagente) vs Siempre BP: {'b': 47, 'c': 71, 'p': 0.027148284679027756}
+  {'C1 = regla_%': 53.33, 'C2 = regla_%': 73.0, 'C1 = C2_%': 63.0, 'kappa C1-regla': 0.2903, 'kappa C2-regla': 0.5793, 'kappa C1-C2': 0.445}
+
+[PASO 2] Subgrupos según el historial del detector
+  Por qué: Localiza en qué incidentes difieren las condiciones.
+  {'subgrupo': 'Todos los incidentes', 'n': 300, 'real_TP_%': 25.0, 'real_BP_%': 50.3, 'real_FP_%': 24.7, 'regla_%': 50.0, 'C1_%': 34.7, 'C2_%': 42.3, 'regla_IC95_%': [44.4, 55.6], 'C1_IC95_%': [29.5, 40.2], 'C2_IC95_%': [36.9, 48.0], 'C1_asigna_TP': 60, 'C1_asigna_BP': 97, 'C1_asigna_FP': 143, 'C2_asigna_TP': 47, 'C2_asigna_BP': 149, 'C2_asigna_FP': 89, 'C2_asigna_NP': 15, 'mcnemar_C2_vs_C1': {'b': 45, 'c': 22, 'p': 0.004955732317277909}}
+  {'subgrupo': 'Con historial de detector', 'n': 216, 'real_TP_%': 27.8, 'real_BP_%': 46.3, 'real_FP_%': 25.9, 'regla_%': 45.8, 'C1_%': 37.5, 'C2_%': 38.0, 'regla_IC95_%': [39.3, 52.5], 'C1_IC95_%': [31.3, 44.1], 'C2_IC95_%': [31.8, 44.6], 'C1_asigna_TP': 37, 'C1_asigna_BP': 71, 'C1_asigna_FP': 108, 'C2_asigna_TP': 38, 'C2_asigna_BP': 79, 'C2_asigna_FP': 86, 'C2_asigna_NP': 13, 'mcnemar_C2_vs_C1': {'b': 18, 'c': 17, 'p': 0.8657723749926214}}
+  {'subgrupo': 'Sin historial de detector', 'n': 84, 'real_TP_%': 17.9, 'real_BP_%': 60.7, 'real_FP_%': 21.4, 'regla_%': 60.7, 'C1_%': 27.4, 'C2_%': 53.6, 'regla_IC95_%': [50.0, 70.5], 'C1_IC95_%': [19.0, 37.7], 'C2_IC95_%': [43.0, 63.8], 'C1_asigna_TP': 23, 'C1_asigna_BP': 26, 'C1_asigna_FP': 35, 'C2_asigna_TP': 9, 'C2_asigna_BP': 70, 'C2_asigna_FP': 3, 'C2_asigna_NP': 2, 'mcnemar_C2_vs_C1': {'b': 27, 'c': 5, 'p': 0.00010062192211963679}}
+  {'incidentes': 84, 'con_tasas_de_categoria': 84, 'clase_mas_frecuente_de_la_categoria': {'BP': 76, 'FP': 6, 'TP': 2}, 'exactitud_de_la_clase_de_la_categoria_%': 53.6, 'C1_coincide_%': 33.3, 'C2_coincide_%': 85.7}
+
+[PASO 3] Confianza declarada
+  Por qué: Una confianza útil debe ser mayor en los aciertos; se mide con el AUC y por intervalos.
+  C1: {'corridas': 900, 'media': 0.6102, 'media_en_aciertos': 0.6738, 'media_en_errores': 0.5753, 'AUC_confianza_acierto': 0.7243, 'menor_que_umbral_%': 40.11, 'igual_a_una_tasa_del_historial_%': 28.89, 'exactitud_por_corrida_procesada_%': 35.44}
+  C2: {'corridas': 836, 'media': 0.7199, 'media_en_aciertos': 0.7246, 'media_en_errores': 0.7162, 'AUC_confianza_acierto': 0.5247, 'menor_que_umbral_%': 0.72, 'igual_a_una_tasa_del_historial_%': 2.39, 'exactitud_por_corrida_procesada_%': 44.38}
+
+[PASO 4] Escalamiento y prioridad
+  Por qué: El escalamiento es la salvaguarda frente a los errores: interesa qué queda sin escalar.
+  C1: {'escalados_n': 174, 'escalados_%': 58.0, 'no_escalados_n': 126, 'no_procesados_n': 0, 'exactitud_no_escalados_%': 57.14, 'exactitud_escalados_%': 18.39, 'TP_escalados_n': 42, 'TP_escalados_%': 56.0, 'TP_cerrados_como_BP_o_FP_sin_escalar_n': 33, 'TP_no_procesados_n': 0, 'corridas_en_que_el_modelo_pide_escalar_%': 20.0, 'corridas_escaladas_%': 57.33, 'prioridad_por_corrida': {'P1': 143, 'P2': 37, 'P3': 88, 'P4': 632}, 'AUC_prioridad_TP_por_corrida': 0.5088}
+  C2: {'escalados_n': 134, 'escalados_%': 44.67, 'no_escalados_n': 151, 'no_procesados_n': 15, 'exactitud_no_escalados_%': 45.03, 'exactitud_escalados_%': 44.03, 'TP_escalados_n': 40, 'TP_escalados_%': 53.33, 'TP_cerrados_como_BP_o_FP_sin_escalar_n': 30, 'TP_no_procesados_n': 5, 'corridas_en_que_el_modelo_pide_escalar_%': 49.64, 'corridas_escaladas_%': 50.24, 'prioridad_por_corrida': {'P1': 91, 'P2': 60, 'P3': 300, 'P4': 385}, 'AUC_prioridad_TP_por_corrida': 0.561}
+
+[PASO 5] Consistencia entre corridas
+  Por qué: Un sistema de apoyo debe dar la misma respuesta al mismo incidente.
+  C1: {'unanimes_%': 81.33, 'kappa_entre_corridas': [0.8037, 0.757, 0.8472], 'incidentes_sin_corridas_NP': 300, 'unanimes_sin_NP_%': 81.33}
+  C2: {'unanimes_%': 60.67, 'kappa_entre_corridas': [0.6214, 0.5157, 0.5816], 'incidentes_sin_corridas_NP': 254, 'unanimes_sin_NP_%': 70.47}
+
+[PASO 6] Ciclo de verificación y corrección (agente de trazabilidad)
+  Por qué: Identifica por qué se activó la corrección y cómo terminó, porque explica las corridas no procesadas.
+  {'corridas_C2': 900, 'correccion_activada': 70, 'correccion_activada_%': 7.78, 'correcciones_concluidas': 6, 'correcciones_fallidas_no_procesadas': 64, 'causa_registrada_de_las_fallidas': ['correccion: salida inválida tras reintentos'], 'fallidas_por_confianza_fuera_de_rango': 64, 'concluidas_identificadores_rechazados': 10, 'concluidas_rechazados_que_son_claves_del_historial': 10, 'concluidas_trazables_tras_la_correccion': 1, 'concluidas_palabras_justificacion_media': 38.1667, 'contexto_cita_claves_del_historial_corridas': 197, 'contexto_cita_claves_del_historial_%': 23.56, 'contexto_identificadores_inexistentes': 0, 'incidentes_con_alguna_corrida_no_procesada': 46, 'incidentes_segun_corridas_no_procesadas': {1: 31, 2: 12, 3: 3}, 'C1_corridas_con_evidencias_rechazadas': 0}
+  Decisiones trazables con clase errónea: {'C1': {'trazables': 300, 'trazables_con_clase_erronea': 196, '%': 65.3}, 'C2': {'trazables': 283, 'trazables_con_clase_erronea': 157, '%': 55.5}}
+
+[PASO 7] Justificaciones y costo
+  Por qué: Describe el producto documental de cada decisión y lo que cuesta producirlo.
+  C1: {'palabras_media': 65.5056, 'palabras_min': 50, 'palabras_max': 90, 'evidencias_citadas_media': 3.3444, 'mencionan_el_historial_%': 92.22, 'tokens_entrada_media': 1277.43, 'tokens_salida_media': 141.5833, 'tokens_total_media': 1419.0133, 'llamadas_media': 1.0, 'tiempo_total_h': 0.7277}
+  C2: {'palabras_media': 66.5335, 'palabras_min': 24, 'palabras_max': 90, 'evidencias_citadas_media': 3.7189, 'mencionan_el_historial_%': 90.55, 'tokens_entrada_media': 3681.8445, 'tokens_salida_media': 461.5897, 'tokens_total_media': 4143.4342, 'llamadas_media': 3.0144, 'tiempo_total_h': 2.1412}
+
+Fin de 10_analisis_complementario: 10.6 s

@@ -1,0 +1,126 @@
+{
+ "incidente": "INC-0357",
+ "resumen": {
+  "alertas": 2,
+  "evidencias": 6,
+  "duracion_min": 265.4,
+  "detectores_distintos": 2,
+  "categorias": {
+   "InitialAccess": 2
+  },
+  "entidades_distintas": {
+   "direcciones_ip": 1,
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-0",
+   "titulo": "T-0",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1078",
+    "T1078.004"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 265.4,
+   "detector": "D-7",
+   "titulo": "T-6",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "CloudLogonRequest",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1078",
+    "nombre": "Valid Accounts",
+    "tacticas": "stealth;persistence;privilege-escalation;initial-access"
+   },
+   {
+    "tecnica": "T1078.004",
+    "nombre": "Cloud Accounts",
+    "tacticas": "stealth;persistence;privilege-escalation;initial-access"
+   }
+  ],
+  "historial": {
+   "D-0": {
+    "alertas_calificadas": 7682,
+    "TP_%": 12.3,
+    "BP_%": 13.6,
+    "FP_%": 74.1
+   },
+   "T-0": {
+    "alertas_calificadas": 7682,
+    "TP_%": 12.3,
+    "BP_%": 13.6,
+    "FP_%": 74.1
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   },
+   "D-7": {
+    "alertas_calificadas": 840,
+    "TP_%": 46.7,
+    "BP_%": 43.5,
+    "FP_%": 9.9
+   },
+   "T-6": {
+    "alertas_calificadas": 840,
+    "TP_%": 46.7,
+    "BP_%": 43.5,
+    "FP_%": 9.9
+   }
+  }
+ }
+}

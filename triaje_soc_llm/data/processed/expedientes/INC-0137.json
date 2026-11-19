@@ -1,0 +1,67 @@
+{
+ "incidente": "INC-0137",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 5,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "Impact": 1
+  },
+  "entidades_distintas": {
+   "dispositivos": 1,
+   "direcciones_ip": 1,
+   "nombres_dispositivo": 1,
+   "urls": 3
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-607",
+   "titulo": "T-558",
+   "categoria": "Impact",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 3
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Ip",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "Machine",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [],
+  "historial": {
+   "D-607": {
+    "alertas_calificadas": 0,
+    "nota": "historial insuficiente"
+   },
+   "T-558": {
+    "alertas_calificadas": 8,
+    "nota": "historial insuficiente"
+   },
+   "categoria Impact": {
+    "alertas_calificadas": 610,
+    "TP_%": 14.1,
+    "BP_%": 83.0,
+    "FP_%": 3.0
+   }
+  }
+ }
+}

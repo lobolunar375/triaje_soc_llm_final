@@ -1,0 +1,420 @@
+{
+ "incidente": "INC-0048",
+ "resumen": {
+  "alertas": 7,
+  "evidencias": 357,
+  "duracion_min": 399.2,
+  "detectores_distintos": 2,
+  "categorias": {
+   "InitialAccess": 7
+  },
+  "entidades_distintas": {
+   "cuentas": 83,
+   "cuentas_correo": 83,
+   "cuentas_entra_id": 83,
+   "nombres_cuenta": 83,
+   "urls": 22,
+   "mensajes_correo": 84
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-1",
+   "titulo": "T-1",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1566.002"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 22
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 21
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 21
+    },
+    {
+     "id": "A1-E4",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 4,
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A1-E5",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 4,
+     "veredicto": "NoThreatsFound"
+    },
+    {
+     "id": "A1-E6",
+     "tipo": "MailCluster",
+     "rol": "Related",
+     "n": 2,
+     "veredicto": "Malicious"
+    }
+   ]
+  },
+  {
+   "id": "A2",
+   "minuto": 6.7,
+   "detector": "D-66",
+   "titulo": "T-48",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A2-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 4,
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A2-E2",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 4,
+     "veredicto": "NoThreatsFound"
+    },
+    {
+     "id": "A2-E3",
+     "tipo": "MailCluster",
+     "rol": "Related",
+     "n": 2,
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A2-E4",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A2-E5",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1,
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A2-E6",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1,
+     "veredicto": "NoThreatsFound"
+    }
+   ]
+  },
+  {
+   "id": "A3",
+   "minuto": 50.7,
+   "detector": "D-1",
+   "titulo": "T-1",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1566.002"
+   ],
+   "evidencias": [
+    {
+     "id": "A3-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 20
+    },
+    {
+     "id": "A3-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 20
+    },
+    {
+     "id": "A3-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 20
+    },
+    {
+     "id": "A3-E4",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 4,
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A3-E5",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 4,
+     "veredicto": "NoThreatsFound"
+    },
+    {
+     "id": "A3-E6",
+     "tipo": "MailCluster",
+     "rol": "Related",
+     "n": 2,
+     "veredicto": "Malicious"
+    }
+   ]
+  },
+  {
+   "id": "A4",
+   "minuto": 146.2,
+   "detector": "D-1",
+   "titulo": "T-1",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1566.002"
+   ],
+   "evidencias": [
+    {
+     "id": "A4-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 4,
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A4-E2",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 4,
+     "veredicto": "NoThreatsFound"
+    },
+    {
+     "id": "A4-E3",
+     "tipo": "MailCluster",
+     "rol": "Related",
+     "n": 2,
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A4-E4",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A4-E5",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1,
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A4-E6",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1,
+     "veredicto": "NoThreatsFound"
+    }
+   ]
+  },
+  {
+   "id": "A5",
+   "minuto": 309.7,
+   "detector": "D-66",
+   "titulo": "T-48",
+   "categoria": "InitialAccess",
+   "tecnicas": [],
+   "evidencias": [
+    {
+     "id": "A5-E1",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 4,
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A5-E2",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 4,
+     "veredicto": "NoThreatsFound"
+    },
+    {
+     "id": "A5-E3",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 2
+    },
+    {
+     "id": "A5-E4",
+     "tipo": "MailCluster",
+     "rol": "Related",
+     "n": 2,
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A5-E5",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 2
+    },
+    {
+     "id": "A5-E6",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 2
+    }
+   ]
+  },
+  {
+   "id": "A6",
+   "minuto": 317.5,
+   "detector": "D-1",
+   "titulo": "T-1",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1566.002"
+   ],
+   "evidencias": [
+    {
+     "id": "A6-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 6
+    },
+    {
+     "id": "A6-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 6
+    },
+    {
+     "id": "A6-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 6
+    },
+    {
+     "id": "A6-E4",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 4,
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A6-E5",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 4,
+     "veredicto": "NoThreatsFound"
+    },
+    {
+     "id": "A6-E6",
+     "tipo": "MailCluster",
+     "rol": "Related",
+     "n": 2,
+     "veredicto": "Malicious"
+    }
+   ]
+  },
+  {
+   "id": "A7",
+   "minuto": 399.2,
+   "detector": "D-1",
+   "titulo": "T-1",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1566.002"
+   ],
+   "evidencias": [
+    {
+     "id": "A7-E1",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 35
+    },
+    {
+     "id": "A7-E2",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 35
+    },
+    {
+     "id": "A7-E3",
+     "tipo": "User",
+     "rol": "Impacted",
+     "n": 35
+    },
+    {
+     "id": "A7-E4",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 4,
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A7-E5",
+     "tipo": "Url",
+     "rol": "Related",
+     "n": 4,
+     "veredicto": "NoThreatsFound"
+    },
+    {
+     "id": "A7-E6",
+     "tipo": "MailCluster",
+     "rol": "Related",
+     "n": 2,
+     "veredicto": "Malicious"
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1566.002",
+    "nombre": "Spearphishing Link",
+    "tacticas": "initial-access"
+   }
+  ],
+  "historial": {
+   "D-1": {
+    "alertas_calificadas": 5747,
+    "TP_%": 48.4,
+    "BP_%": 37.4,
+    "FP_%": 14.2
+   },
+   "T-1": {
+    "alertas_calificadas": 5747,
+    "TP_%": 48.4,
+    "BP_%": 37.4,
+    "FP_%": 14.2
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   },
+   "D-66": {
+    "alertas_calificadas": 260,
+    "TP_%": 54.6,
+    "BP_%": 36.5,
+    "FP_%": 8.8
+   },
+   "T-48": {
+    "alertas_calificadas": 260,
+    "TP_%": 54.6,
+    "BP_%": 36.5,
+    "FP_%": 8.8
+   }
+  }
+ }
+}

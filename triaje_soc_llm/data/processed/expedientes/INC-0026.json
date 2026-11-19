@@ -1,0 +1,103 @@
+{
+ "incidente": "INC-0026",
+ "resumen": {
+  "alertas": 1,
+  "evidencias": 12,
+  "duracion_min": 0.0,
+  "detectores_distintos": 1,
+  "categorias": {
+   "InitialAccess": 1
+  },
+  "entidades_distintas": {
+   "cuentas": 1,
+   "cuentas_correo": 1,
+   "cuentas_entra_id": 1,
+   "nombres_cuenta": 1,
+   "urls": 1,
+   "mensajes_correo": 2
+  }
+ },
+ "alertas": [
+  {
+   "id": "A1",
+   "minuto": 0.0,
+   "detector": "D-1",
+   "titulo": "T-1",
+   "categoria": "InitialAccess",
+   "tecnicas": [
+    "T1566.002"
+   ],
+   "evidencias": [
+    {
+     "id": "A1-E1",
+     "tipo": "MailCluster",
+     "rol": "Related",
+     "n": 2,
+     "veredicto": "Suspicious"
+    },
+    {
+     "id": "A1-E2",
+     "tipo": "MailCluster",
+     "rol": "Related",
+     "n": 1,
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A1-E3",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1
+    },
+    {
+     "id": "A1-E4",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1,
+     "veredicto": "Malicious"
+    },
+    {
+     "id": "A1-E5",
+     "tipo": "MailMessage",
+     "rol": "Related",
+     "n": 1,
+     "veredicto": "NoThreatsFound"
+    },
+    {
+     "id": "A1-E6",
+     "tipo": "Mailbox",
+     "rol": "Impacted",
+     "n": 1
+    }
+   ]
+  }
+ ],
+ "herramientas": {
+  "mitre": [
+   {
+    "tecnica": "T1566.002",
+    "nombre": "Spearphishing Link",
+    "tacticas": "initial-access"
+   }
+  ],
+  "historial": {
+   "D-1": {
+    "alertas_calificadas": 5747,
+    "TP_%": 48.4,
+    "BP_%": 37.4,
+    "FP_%": 14.2
+   },
+   "T-1": {
+    "alertas_calificadas": 5747,
+    "TP_%": 48.4,
+    "BP_%": 37.4,
+    "FP_%": 14.2
+   },
+   "categoria InitialAccess": {
+    "alertas_calificadas": 36339,
+    "TP_%": 22.5,
+    "BP_%": 44.4,
+    "FP_%": 33.1
+   }
+  }
+ }
+}
